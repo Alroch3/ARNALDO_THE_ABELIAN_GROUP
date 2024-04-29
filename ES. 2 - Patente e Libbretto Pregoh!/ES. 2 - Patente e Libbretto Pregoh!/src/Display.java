@@ -32,18 +32,26 @@ public static void mostraSpese(){ // mostra le spese dovute hai giorni precedent
 //si può anche non fare
 }
 
-public static void visualizzaInterfaccia(){//da richiamare su richiesta dell'utente
+public static void mostraGiorniRimanenti(){
 
-System.out.println("\n opzione 1 : mostra il regolamento");
-System.out.println("\n opzione 2 : mostra il Giorno");
-System.out.println("\n opzione 3 : mostra i Comuni");
-System.out.println("\n opzione 4 : mostra il conto residuo");
-System.out.println("\n opzione 5 : mostra i Giorni rimanenti alla fine");
-System.out.println("\n opzione 6 : PROSEGUI...");
-System.out.println("Scriva il numero dell'opzione che desidera visualizzare:");
-
-   
+    //mostra quanti giorni restano alla fine
 }
+
+
+
+public static void visualizzaMenu(){//da richiamare su richiesta dell'utente
+
+System.out.println("\n opzione 1 : REGOLAMENTO");
+System.out.println("\n opzione 2 : GIORNO");
+System.out.println("\n opzione 3 : COMUNI");
+System.out.println("\n opzione 4 : CONTO RESIDUO");
+System.out.println("\n opzione 5 : GIORNI RIMANENTI");
+System.out.println("\n opzione 6 : Prosegui");
+System.out.print("Scriva il numero dell'opzione che desidera visualizzare: ");
+  
+}
+
+
 
 public static void visualizzaInterfacciaIniziale(){// da richiamare solo la prima volta all'inizio
 
@@ -53,12 +61,12 @@ public static void visualizzaInterfacciaIniziale(){// da richiamare solo la prim
                 "assegnato un appartamento di classe 8 a Muskalf Est.\r\n" + 
                 "BUON LAVORO E GLORIA AL BURMINI!” ");
 
-                visualizzaInterfaccia();
+                visualizzaMenu();
 
 }
 
 
-public static void mostraInterfacciaGiornaliera(){ //viene visualizzata ogni giorno
+public static void mostraInterfacciaScelta(){ //viene richiamata dal metodo fai scelta e mostra il giorno, spese, conto  e la persona da accttare o rifiuare
 
     mostraGiorno();
     System.out.println("\n\n\n");
@@ -66,6 +74,7 @@ public static void mostraInterfacciaGiornaliera(){ //viene visualizzata ogni gio
     mostraContoResiduo();
     System.out.println("\n\n\n");
     visualizzaPersona();
+
 
 }
 }
