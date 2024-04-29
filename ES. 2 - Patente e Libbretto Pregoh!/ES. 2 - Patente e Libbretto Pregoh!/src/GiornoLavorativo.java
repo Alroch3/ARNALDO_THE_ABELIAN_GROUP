@@ -1,5 +1,8 @@
 public class GiornoLavorativo {
 
-    private int numPersoneInUniorno = 
+    private int giornCorrente ;//da dichiarare come tipo Data 
+    
+    private Persona[] personeDelGiorno = new Persona[7];
+
 
 }
