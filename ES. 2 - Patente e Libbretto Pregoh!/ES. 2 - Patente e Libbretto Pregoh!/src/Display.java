@@ -6,7 +6,13 @@ public class Display {
 public static void mostraRegolamento(){
 
     //metodo che aiuta l'utente a capire in cosa consiste il gioco e come vincere
-
+ System.out.println("Benvenuto alla frontiera del Burmini! Per non essere licenziato al primo giorno ci sono delle regole che bisogna seguire..."
+ + "\n 1. Ogni giorno dovrà controllare delle persone e decidere se possono oltrepassare la frontiera"
+ + "\n 2. Se fa passare una persona con passaporto falso/scaduto avrete una possibilià di essere scoperti dal capo e prendere una multa di 300 sbleuri"
+ + "\n 3. Se non fa passare una persona che poteva entrare in modo regolare potrete essere puniti e ricevere una multa di 150 sbleuri"
+ + "\n 4. Se svolge il suo lavoro e rifiuta una persona non in regola essa potrebbe provare a corromperla...Ci PENSI DUE VOLTE AD ACCETTARE!!!"
+ + "\n 5. c'è una buona notizia e una cattiva... ogni persona controllata sono 50 sbleuri ma ogni 3 giorni dovrà pagare 200 sbleuri di tasse...( fossi in lei non evaderei)"
+ + "\n (Detto tra noi... il Burmini sta diventando un paese pericoloso, se vuole sopravvivere dovrà intascare 2300 sblueri in 12 giorni e io mi occuperò della sua fuga)");
     
 }
 
