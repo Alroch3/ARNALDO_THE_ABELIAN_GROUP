@@ -4,14 +4,14 @@ public class InterazioniUtente {
 
 private Scanner scanner = new Scanner(System.in);
 
-
+//----------------------------------------------------------------------------------------------------------------------------
 public void erroreDiScelta(){ 
 
     System.out.println("numero di opzione non valido, riprova");
 
 }
 
-
+//-------------------------------------------------------------------------------------------------------------------------------
 
 public void faiScelta(){ // metodo che mostra l'interfaccia della scelta, permette all'utente di scegliere se far entrare o no la persona e di aprire il menu
 
@@ -44,6 +44,7 @@ public void faiScelta(){ // metodo che mostra l'interfaccia della scelta, permet
   
 }
 
+//--------------------------------------------------------------------------------------------------------------------------------
 
 
   public void sceltaMenu(){// metodo che permette di scegliere un opzione del menu
@@ -89,5 +90,6 @@ public void faiScelta(){ // metodo che mostra l'interfaccia della scelta, permet
 
   }
 
+//-----------------------------------------------------------------------------------------------------------------------------------
 
 }

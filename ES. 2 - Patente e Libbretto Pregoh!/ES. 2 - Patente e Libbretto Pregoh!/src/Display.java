@@ -1,41 +1,58 @@
 import java.util.Scanner;
 
 public class Display {
+//--------------------------------------------------------------------------------------------------------------
 
 public static void mostraRegolamento(){
 
     //metodo che aiuta l'utente a capire in cosa consiste il gioco e come vincere
+
+    
 }
+
+//--------------------------------------------------------------------------------------------------------------
 
 public static void mostraGiorno(){
 
     //metodo che mostra la data odierna 
 }
 
+//--------------------------------------------------------------------------------------------------------------
 public static void mostraComuni(){
+
 
     //per mostrare l'elenco dei comuni validi
 
 }
+
+//--------------------------------------------------------------------------------------------------------------
 
 public static void visualizzaPersona(){
 
     //per visulaizzare i dati della persona da esaminare a schermo
 }
 
+//--------------------------------------------------------------------------------------------------------------
+
 public static void mostraContoResiduo(){
 
     //per visualizzare il conto residuo
 }
 
+//--------------------------------------------------------------------------------------------------------------
+
 public static void mostraSpese(){ // mostra le spese dovute hai giorni precedenti per vari motivi
 //si può anche non fare
 }
+
+//--------------------------------------------------------------------------------------------------------------
 
 public static void mostraGiorniRimanenti(){
 
     //mostra quanti giorni restano alla fine
 }
+
+//--------------------------------------------------------------------------------------------------------------
 
 
 
@@ -51,7 +68,7 @@ System.out.print("Scriva il numero dell'opzione che desidera visualizzare: ");
   
 }
 
-
+//--------------------------------------------------------------------------------------------------------------
 
 public static void visualizzaInterfacciaIniziale(){// da richiamare solo la prima volta all'inizio
 
@@ -65,6 +82,7 @@ public static void visualizzaInterfacciaIniziale(){// da richiamare solo la prim
 
 }
 
+//--------------------------------------------------------------------------------------------------------------
 
 public static void mostraInterfacciaScelta(){ //viene richiamata dal metodo fai scelta e mostra il giorno, spese, conto  e la persona da accttare o rifiuare
 
