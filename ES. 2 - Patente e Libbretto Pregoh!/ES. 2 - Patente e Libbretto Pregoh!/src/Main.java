@@ -9,7 +9,7 @@ public class Main {
             Display.mostraRegolamento();
         }
         
-        System.out.println(GestioneXML.cercaComuneDaXML("SAN GEMINI"));
+        System.out.println(GestioneXML.cercaComuneDaXML("YUWHC"));
 
         while(true){                                                            //implementare le condizioni affinchè si ha la fine del gioco
             GiornoLavorativo giorno = new GiornoLavorativo();

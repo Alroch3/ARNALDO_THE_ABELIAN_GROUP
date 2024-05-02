@@ -42,7 +42,10 @@ public static boolean seRifiuta(Persona personaRifutata){ //il metodo controlla 
 
   }
 
-//--------------------------------------------------------------------------------------------------------------------------------------------------------------
+public static boolean controlloCF(){
+  
+}
+
 
 public static boolean controllaDatiPersona(Persona personaDaControllare){ // il metodo controlla i dati della persona se sono giusti o sbagliati
 

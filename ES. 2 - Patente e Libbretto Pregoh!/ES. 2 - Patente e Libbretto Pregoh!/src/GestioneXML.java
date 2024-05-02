@@ -140,11 +140,15 @@ public class GestioneXML {
             xmlr = xmlif.createXMLStreamReader(filename, reader);
             try {
                 while (!elementoTrovato) {
+                    
                     while(!(xmlr.getEventType() == XMLStreamConstants.START_ELEMENT && xmlr.getLocalName().equals("nome"))){
                         xmlr.next();
                     }
                     while(!(xmlr.getEventType() == XMLStreamConstants.CHARACTERS && xmlr.getText().equals(nomeComune))){
                         xmlr.next();
+                        if(xmlr.getEventType() == XMLStreamConstants.END_DOCUMENT){                                             //questo if è importante perchè fa in modo di non incorrere nell'eccezione : "NoSuchElementException" se il comune cercato non c'è nell'elenco
+                            return risultato = "comune non esistente";
+                        } 
                     }
                     while(!(xmlr.getEventType() == XMLStreamConstants.START_ELEMENT && xmlr.getLocalName().equals("codice"))){
                         xmlr.next();
@@ -153,7 +157,7 @@ public class GestioneXML {
                         xmlr.next();
                     }
                     risultato = xmlr.getText();
-                    elementoTrovato = true;  
+                    elementoTrovato = true; 
                 }
                 xmlr.close();
             } catch (XMLStreamException e) {
