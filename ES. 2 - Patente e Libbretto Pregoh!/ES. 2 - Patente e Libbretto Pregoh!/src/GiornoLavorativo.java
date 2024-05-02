@@ -12,13 +12,7 @@ public class GiornoLavorativo {
         GestioneXML.creaPersonaDaXML(personeDelGiorno[0], "1");                                        //Chiamo il metodo creaPersonaDaXml nella classe Gestione XML passandogli la persona presa dall'array e l'indice della persona da cui leggere e scrivere i dati dall'XML
 
         //stampa per debug della persona 0 dell'array personeDeglGiorno 
-        System.out.println("nome: " + personeDelGiorno[0].getNome() + "\n" 
-                         + "cognome: " + personeDelGiorno[0].getCognome() + "\n"
-                         + "sesso: " + personeDelGiorno[0].getSesso() + "\n"
-                         + "data di nascita: " + personeDelGiorno[0].getData() + "\n"
-                         + "comune: " + personeDelGiorno[0].getLuogoDiNascita() + "\n"
-                         + "cf: " + personeDelGiorno[0].getcF() + "\n"
-                         + "scadenza: " + personeDelGiorno[0].getScadenza());
+        System.out.println(personeDelGiorno[0].toString());
     }
 
     

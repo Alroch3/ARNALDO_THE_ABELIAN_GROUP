@@ -9,8 +9,7 @@ public class Persona {
     private String scadenza;
     private boolean sceltaUtente;       //scelta di ingresso o meno della persona da parte dell'utente ( non quella giusta )
 
-    public Persona(String nome, String cognome, String sesso, String data, String luogoDiNascita, String cF,
-            String scadenza) {
+    public Persona(String nome, String cognome, String sesso, String data, String luogoDiNascita, String cF, String scadenza) {
         this.nome = nome;
         this.cognome = cognome;
         this.sesso = sesso;
@@ -18,6 +17,17 @@ public class Persona {
         this.luogoDiNascita = luogoDiNascita;
         this.cF = cF;
         this.scadenza = scadenza;
+    }
+
+    @Override
+    public String toString() {                      //Questo toString visualizzerà i dati della persona che arriverà al confine, modificare il layout 
+        return ("Nome: " + getNome() + "\n" 
+        + "Cognome: " + getCognome() + "\n"
+        + "Sesso: " + getSesso() + "\n"
+        + "Data di nascita: " + getData() + "\n"
+        + "Luogo di nascita: " + getLuogoDiNascita() + "\n"
+        + "CF: " + getcF() + "\n"
+        + "Scadenza documento: " + getScadenza());
     }
 
     public String getNome() {
