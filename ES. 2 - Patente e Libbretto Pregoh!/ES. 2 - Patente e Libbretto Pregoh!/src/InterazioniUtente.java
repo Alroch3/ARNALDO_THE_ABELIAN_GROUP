@@ -26,10 +26,11 @@ public class InterazioniUtente {
   }
 
   private static void seRifiuta() {
-    System.out.println(MSG_ENTRATA_RIFIUTATA);
+    System.out.println("Persona rifiutata");
   }
 
   private static void seAccetta() {
-    System.out.println(MSG_ENTRATA_ACCETTATA);
+    System.out.println("Persona accettata");
   }
+
 }

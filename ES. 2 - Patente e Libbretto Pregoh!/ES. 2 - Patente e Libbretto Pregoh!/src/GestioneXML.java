@@ -37,6 +37,8 @@ public class GestioneXML {
         XMLInputFactory xmlif = null;
         XMLStreamReader xmlr = null;
 
+        boolean elementoTrovato = false;                             //booleano che ci dice se la persona selezionata dall'indice è stata trovata nell'XML
+
         try (FileInputStream reader = new FileInputStream(filename)) {
             xmlif = XMLInputFactory.newInstance();
             xmlr = xmlif.createXMLStreamReader(filename, reader);
@@ -123,6 +125,45 @@ public class GestioneXML {
             System.out.println("Error in initializing the reader:");
             System.out.println(e.getMessage());
         }
+    }
+
+    public static String cercaComuneDaXML(String nomeComune){                //questo metodo prende come parametro il nome di un comune e restituisce il codice corrispondente del codice fiscale
+        final String filename = "src\\XML\\comuni.xml";                      //CLASSPATH XML comuni --NON MODIFICARE!--      
+        XMLInputFactory xmlif = null;
+        XMLStreamReader xmlr = null;
+
+        boolean elementoTrovato = false;
+        String risultato = "";
+
+        try (FileInputStream reader = new FileInputStream(filename)) {
+            xmlif = XMLInputFactory.newInstance();
+            xmlr = xmlif.createXMLStreamReader(filename, reader);
+            try {
+                while (!elementoTrovato) {
+                    while(!(xmlr.getEventType() == XMLStreamConstants.START_ELEMENT && xmlr.getLocalName().equals("nome"))){
+                        xmlr.next();
+                    }
+                    while(!(xmlr.getEventType() == XMLStreamConstants.CHARACTERS && xmlr.getText().equals(nomeComune))){
+                        xmlr.next();
+                    }
+                    while(!(xmlr.getEventType() == XMLStreamConstants.START_ELEMENT && xmlr.getLocalName().equals("codice"))){
+                        xmlr.next();
+                    }
+                    while(!(xmlr.getEventType() == XMLStreamConstants.CHARACTERS)){
+                        xmlr.next();
+                    }
+                    risultato = xmlr.getText();
+                    elementoTrovato = true;  
+                }
+                xmlr.close();
+            } catch (XMLStreamException e) {
+                e.printStackTrace();
+            }
+        } catch (FactoryConfigurationError | XMLStreamException | IOException e) {
+            System.out.println("Error in initializing the reader:");
+            System.out.println(e.getMessage());
+        }
+        return risultato;
     }
 
 }

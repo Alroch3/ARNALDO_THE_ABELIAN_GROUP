@@ -1,11 +1,11 @@
 public class Controllore {
 
-  private boolean giudizioScelta= false;
-  private boolean risultatoControllo = false;
+  private static boolean giudizioScelta= false;
+  private static boolean risultatoControllo = false;
 
 
 //------------------------------------------------------------------------------------------------------------------------------------------------------------------
-public  boolean seAccetta(Persona personaAccettata){  //il metodo controlla la persona e se l'utente ha fatto la scelta giusta ritorna true altrimenti false
+public static boolean seAccetta(Persona personaAccettata){  //il metodo controlla la persona e se l'utente ha fatto la scelta giusta ritorna true altrimenti false
 
    boolean risultato = controllaDatiPersona(personaAccettata);
 
@@ -24,7 +24,7 @@ public  boolean seAccetta(Persona personaAccettata){  //il metodo controlla la p
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-public  boolean seRifiuta(Persona personaRifutata){ //il metodo controlla la persona e se l'utente ha fatto la scelta giusta ritorna true altrimenti false
+public static boolean seRifiuta(Persona personaRifutata){ //il metodo controlla la persona e se l'utente ha fatto la scelta giusta ritorna true altrimenti false
 
    boolean risultato = controllaDatiPersona(personaRifutata);
     
@@ -44,7 +44,7 @@ public  boolean seRifiuta(Persona personaRifutata){ //il metodo controlla la per
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-public boolean controllaDatiPersona(Persona personaDaControllare){ // il metodo controlla i dati della persona se sono giusti o sbagliati
+public static boolean controllaDatiPersona(Persona personaDaControllare){ // il metodo controlla i dati della persona se sono giusti o sbagliati
 
 
   //ANCORA DA IMPLEMENTARE 
