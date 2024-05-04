@@ -11,6 +11,8 @@ import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
 import javax.xml.stream.XMLStreamWriter;
 
+//INSIEME DIARIO
+
 public class GestioneXML {
 
     private static boolean elementoTrovato = false;                             //booleano che ci dice se la persona selezionata dall'indice è stata trovata nell'XML
@@ -32,8 +34,8 @@ public class GestioneXML {
      * }
      */
 
-     public static Persona creaPersonaDaXML(String idPersonaCercata) {    //Metodo che crea una persona con i dati presi dall'xml di una persona, la selezione della persona dell'XML avviene tramite il passaggio dell'indice alla chiamata del metodo creaPersonaDaXML
-     final String filename = "src\\XML\\IDpersone.xml";                      //CLASSPATH XML IDpersone --NON MODIFICARE!--      
+     public static Persona creaPersonaDaXML(int idPersonaCercata) {    //Metodo che crea una persona con i dati presi dall'xml di una persona, la selezione della persona dell'XML avviene tramite il passaggio dell'indice alla chiamata del metodo creaPersonaDaXML
+     final String filename = "ES. 2 - Patente e Libbretto Pregoh!\\ES. 2 - Patente e Libbretto Pregoh!\\src\\XML\\IDpersone.xml";                      //CLASSPATH XML IDpersone --NON MODIFICARE!--      
      XMLInputFactory xmlif = null;
      XMLStreamReader xmlr = null;
 
@@ -73,7 +75,7 @@ public class GestioneXML {
              while (!elementoTrovato) {
                  if (xmlr.getEventType() == XMLStreamConstants.START_ELEMENT) {                      //verifica se ciò che sta leggendo è l'inizio di un tag
                      if (xmlr.getLocalName().equals("persona")                              //verifica che il nome del tag sia persona
-                             && xmlr.getAttributeValue(0).equals(idPersonaCercata)) {          //verifica inoltre che il valore dell'unico attributo (lo 0) del tag sia l'id della persona cercata che viene passata come parametro al metodo 
+                             && xmlr.getAttributeValue(0).equals(Integer.toString(idPersonaCercata))) {          //verifica inoltre che il valore dell'unico attributo (lo 0) del tag sia l'id della persona cercata che viene passata come parametro al metodo 
                          xmlr.next();
                          while (!(xmlr.getEventType() == XMLStreamConstants.END_ELEMENT              //questo ciclo continua fino a quando non sta leggenco la fine del tag scadenza documento che è l'ultimo tag che vogliamo leggere della persona selezionata
                                  && xmlr.getLocalName().equals("scadenza_documento"))) {
@@ -130,7 +132,7 @@ public class GestioneXML {
     }
 
     public static String cercaComuneDaXML(String nomeComune){                //questo metodo prende come parametro il nome di un comune e restituisce il codice corrispondente del codice fiscale
-        final String filename = "src\\XML\\comuni.xml";                      //CLASSPATH XML comuni --NON MODIFICARE!--      
+        final String filename = "ES. 2 - Patente e Libbretto Pregoh!\\ES. 2 - Patente e Libbretto Pregoh!\\src\\GestioneXML.java";                      //CLASSPATH XML comuni --NON MODIFICARE!--      
         XMLInputFactory xmlif = null;
         XMLStreamReader xmlr = null;
 

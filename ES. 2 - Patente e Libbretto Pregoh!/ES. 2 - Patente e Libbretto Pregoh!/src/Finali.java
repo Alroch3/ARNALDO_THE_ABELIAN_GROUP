@@ -6,7 +6,7 @@ public class Finali {
     }
 
     public static boolean farProseguireIlGioco() {
-        return true;
+        return false;
     }
 
 }

@@ -11,7 +11,7 @@ public class Display {
         "ACCETTARE ENTRATA",
         "RIFIUTARE ENTRATA",
         "REGOLAMENTO",
-        "COMUNI",
+        "VISUALIZZA GIORNO"
     };
 
     public static void mostraRegolamento() {             // metodo che aiuta l'utente a capire in cosa consiste il gioco e come vincere
@@ -26,9 +26,10 @@ public class Display {
 
     }
 
-    public static void mostraGiorno() {
+    public static void mostraGiorno() {     //serve all'utente per controllare se i documenti sono scaduti
 
-        // metodo che mostra la data odierna
+        // metodo che mostra la data odierna 
+        System.out.println(" ");
     }
 
 
@@ -68,6 +69,11 @@ public class Display {
                 + //
                 "assegnato un appartamento di classe 8 a Muskalf Est.\r\n" +
                 "BUON LAVORO E GLORIA AL BURMINI!” ");
+    }
+
+    public static void visualizzaInizioGioco(int giornoCorrente){
+        System.out.print("GIORNO " + giornoCorrente + " DATA: ");
+        Display.mostraGiorno();
     }
     /*
 
