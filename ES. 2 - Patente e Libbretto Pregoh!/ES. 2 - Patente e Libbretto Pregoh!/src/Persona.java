@@ -20,6 +20,17 @@ public class Persona {
         this.scadenza = scadenza;
     }
 
+    @Override
+    public String toString() {                      //Questo toString visualizzerà i dati della persona che arriverà al confine, modificare il layout 
+        return ("Nome: " + getNome() + "\n" 
+        + "Cognome: " + getCognome() + "\n"
+        + "Sesso: " + getSesso() + "\n"
+        + "Data di nascita: " + getData() + "\n"
+        + "Luogo di nascita: " + getLuogoDiNascita() + "\n"
+        + "CF: " + getcF() + "\n"
+        + "Scadenza documento: " + getScadenza());
+    }
+
     public String getNome() {
         return nome;
     }
