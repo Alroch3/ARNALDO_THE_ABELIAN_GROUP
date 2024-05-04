@@ -24,7 +24,7 @@ public class GiornoLavorativo {
         for (int i=0; i<numPersoneCasuale; i++){
 
             //DA GUARDARE COME FUNZIONA LA CREAZIONE DA XML
-            this.personeDelGiorno[i]= crea;
+            this.personeDelGiorno[i]= creaArrayDiPersone();
         }
 
         return this.personeDelGiorno;
