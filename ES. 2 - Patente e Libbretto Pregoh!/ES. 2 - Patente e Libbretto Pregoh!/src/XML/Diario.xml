@@ -1,0 +1,939 @@
+<?xml version=“1.0” encoding=“UTF-8”?>
+
+<periodo_lavorativo>
+    <giorno id="1">
+        <persona id="1">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="2">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="3">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="4">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="5">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>        
+        <persona id="6">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="7">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+    </giorno>
+    <giorno id="2">
+        <persona id="1">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="2">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="3">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="4">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="5">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>        
+        <persona id="6">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="7">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+    </giorno>
+    <giorno id="3">
+        <persona id="1">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="2">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="3">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="4">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="5">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>        
+        <persona id="6">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="7">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+    </giorno>
+    <giorno id="4">
+        <persona id="1">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="2">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="3">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="4">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="5">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>        
+        <persona id="6">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="7">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+    </giorno>
+    <giorno id="5">
+        <persona id="1">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="2">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="3">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="4">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="5">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>        
+        <persona id="6">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="7">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+    </giorno>
+    <giorno id="6">
+        <persona id="1">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="2">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="3">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="4">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="5">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>        
+        <persona id="6">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="7">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+    </giorno>
+    <giorno id="7">
+        <persona id="1">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="2">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="3">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="4">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="5">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>        
+        <persona id="6">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="7">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+    </giorno>
+    <giorno id="8">
+        <persona id="1">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="2">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="3">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="4">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="5">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>        
+        <persona id="6">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="7">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+    </giorno>
+    <giorno id="9">
+        <persona id="1">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="2">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="3">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="4">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="5">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>        
+        <persona id="6">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="7">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+    </giorno>
+    <giorno id="10">
+        <persona id="1">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="2">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="3">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="4">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="5">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>        
+        <persona id="6">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="7">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+    </giorno>
+    <giorno id="11">
+        <persona id="1">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="2">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="3">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="4">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="5">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>        
+        <persona id="6">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="7">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+    </giorno>
+    <giorno id="12">
+        <persona id="1">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="2">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="3">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="4">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="5">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>        
+        <persona id="6">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="7">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+    </giorno>
+    <giorno id="13">
+        <persona id="1">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="2">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="3">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="4">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="5">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>        
+        <persona id="6">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+        <persona id="7">
+            <nome></nome>
+            <cognome></cognome>
+            <sesso></sesso>
+            <data_nascita></data_nascita>
+            <comune_nascita></comune_nascita>
+            <codice_fiscale></codice_fiscale>
+            <scadenza_documento></scadenza_documento>
+            <approvazione_ingresso></approvazione_ingresso>
+        </persona>
+    </giorno>
