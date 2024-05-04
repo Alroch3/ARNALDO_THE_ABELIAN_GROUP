@@ -1,5 +1,6 @@
 import it.kibo.*;
 import it.kibo.fp.lib.Menu;
+import it.kibo.fp.lib.RandomDraws;
 
 public class InterazioniUtente {
 
@@ -30,12 +31,18 @@ public class InterazioniUtente {
         
   private static void seAccetta() {
     System.out.println(MSG_ENTRATA_ACCETTATA);
+    Governo.daiMultaTrecento();
+    
     //chiamata al controllore per verificare che i dati siano corretti, se il controllore ritorna falso chiamata alla classe governo per multa
+    
+
+
   }  
 
   private static void seRifiuta() {
     System.out.println(MSG_ENTRATA_RIFIUTATA);
     //chiamata al controllore per verificare che i dati siano errati, se il controllore ritorna vero chiamata alla classe governo per multa
+    Governo.daiMultaCentoCinquanta();
   }
 
   

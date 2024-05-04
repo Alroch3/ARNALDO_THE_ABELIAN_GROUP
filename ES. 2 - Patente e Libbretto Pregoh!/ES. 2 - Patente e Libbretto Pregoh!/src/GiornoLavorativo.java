@@ -4,15 +4,15 @@ import it.kibo.fp.lib.RandomDraws;
 
 public class GiornoLavorativo {
 
-    //da fare: gestione date con classe date
-    private LocalDate giornoCorrente;   
+    
+    private static LocalDate giornoCorrente;   
     
     private int numPersonePassate;
 
-    private Persona[] personeDelGiorno = new Persona[7];   
+    private static Persona[] personeDelGiorno = new Persona[7];   
     
-    public GiornoLavorativo(LocalDate giornoCorrente) {
-        this.giornoCorrente = giornoCorrente;
+    public GiornoLavorativo(LocalDate giornoCorrent) {
+        giornoCorrent = giornoCorrente;
     }
     
     //Metodo che crea un array di persone prese dall'XML e che ritorna l'array stesso
@@ -22,21 +22,35 @@ public class GiornoLavorativo {
         numPersonePassate = RandomDraws.drawInteger(3, 7);
 
         for (int i=0; i<numPersonePassate; i++){
-            this.personeDelGiorno[i]= GestioneXML.creaPersonaDaXML(RandomDraws.drawInteger(0, 1000));
+            personeDelGiorno[i]= GestioneXML.creaPersonaDaXML(RandomDraws.drawInteger(0, 1000));
         }
 
+    }
+
+
+    /*
+     * @author Gaia:
+     * 
+     * CAMBIAMENTI: -> AGGIUNTA NUOVO METODO
+     * 
+     * SPIEGAZIONE: nuovo metodo che ritorna un oggetto Persona in posizione "indice" dall'array di persone creato precedentemente
+     *              
+     */
+
+    public static Persona getUnaPersonaDallArray(int indice) {
+        return personeDelGiorno[indice];
+    }
+
+    public static Persona [] getPersone() {
+        return personeDelGiorno;
     }
 
     public String toString(int indice) {
         return personeDelGiorno[indice].toString();
     }
 
-    public LocalDate getGiornoCorrente() {
+    public static LocalDate getGiornoCorrente() {
         return giornoCorrente;
-    }
-
-    public Persona[] getPersoneDelGiorno() {
-        return personeDelGiorno;
     }
 
     public int getNumPersonePassate() {

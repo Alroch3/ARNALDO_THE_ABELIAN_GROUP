@@ -2,7 +2,7 @@ import java.time.LocalDate;
 
 // ROBERTO
 
-public class Controllore {
+public class Controllore extends Partita{
 
   private static boolean giudizioScelta= false;
   private static boolean risultatoControllo = false;
