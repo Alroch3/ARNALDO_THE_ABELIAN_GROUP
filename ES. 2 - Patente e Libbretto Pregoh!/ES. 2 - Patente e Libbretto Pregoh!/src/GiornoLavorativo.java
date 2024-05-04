@@ -1,15 +1,17 @@
+import javax.xml.crypto.Data;
+
 import it.kibo.*;
 
 public class GiornoLavorativo {
 
     //da fare: gestione date con classe date
-    private int giornoCorrente;    
+    private Data giornoCorrente;    
 
     private Persona[] personeDelGiorno = new Persona[7];     
     
-    public GiornoLavorativo(int giornoCorrente, Persona [] personeDelGiorno) {
-        this.giornoCorrente = giornoCorrente;
-        this.personeDelGiorno= personeDelGiorno;
+    public GiornoLavorativo(Data giornoCorrente, Persona [] personeDelGiorno) {
+        this.giornoCorrente = aggiungiUnGiorno(this.giornoCorrente);
+        this.personeDelGiorno= creaArrayDiPersone();
     }
     
 
@@ -28,6 +30,10 @@ public class GiornoLavorativo {
         return this.personeDelGiorno;
     }
     
+    public Data aggiungiUnGiorno(Data giornoCorrente){
+
+        return this.giornoCorrente; 
+    }
     
 
     //DA SISTEMARE: ho aggiunto il metodo di kibo della classe RANDDRAWS.. qua sotto perchè non riuscivo a farlo funzionare in altri modi
