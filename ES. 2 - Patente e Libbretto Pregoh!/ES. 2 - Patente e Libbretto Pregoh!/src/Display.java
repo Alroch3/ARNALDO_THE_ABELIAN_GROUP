@@ -1,4 +1,4 @@
-import it.kibo.fp.lib.Menu;
+import it.kibo.fp.lib.*;
 
 public class Display {
 
