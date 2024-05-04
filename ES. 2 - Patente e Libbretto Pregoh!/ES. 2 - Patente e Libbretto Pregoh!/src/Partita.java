@@ -1,6 +1,4 @@
 import java.time.LocalDate;
-import java.util.*;
-
 import it.kibo.fp.lib.*;
 
 
@@ -9,8 +7,9 @@ public class Partita {
     //creo un Array di giorni lavorativi
     private static GiornoLavorativo [] giorniPartita = new GiornoLavorativo[11];
     private static LocalDate dataIniziale = LocalDate.of(2024, 4, 26);
-    private static int contatoreGiorni = 1;
-
+    public static int contatoreGiorni = 1;
+    private static boolean boo=false;
+    
     //metodo da richiamare nel main per far andare il gioco!
     public static void gioco(){
         Display.visualizzaInterfacciaIniziale();
@@ -34,10 +33,12 @@ public class Partita {
             //Aumento contatori
             contatoreGiorni++;
 
-        }while(Finali.farProseguireIlGioco());
+        }while(boo);
         //REPORT
         //QUA BISOGNA STAMPARE IL DIARIO (OPPURE ALLA FINE DI OGNI GIORNATA)
     }
+
+
     // AGGIUNGERE COMMENTI!!!!!!
     public static void creaGiorno(int indice){
         GiornoLavorativo nuovoGiorno = new GiornoLavorativo(dataIniziale.plusDays(indice));
@@ -46,7 +47,6 @@ public class Partita {
     }
 }
 
-}
 
     
 

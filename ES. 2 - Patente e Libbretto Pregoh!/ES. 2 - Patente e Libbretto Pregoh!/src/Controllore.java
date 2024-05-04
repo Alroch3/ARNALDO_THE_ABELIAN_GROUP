@@ -2,16 +2,30 @@ import java.time.LocalDate;
 
 // ROBERTO
 
-public class Controllore {
+public class Controllore extends Partita{
 
   private static boolean giudizioScelta= false;
   private static boolean risultatoControllo = false;
 
 
 //------------------------------------------------------------------------------------------------------------------------------------------------------------------
-public static boolean seAccetta(Persona personaAccettata){  //il metodo controlla la persona e se l'utente ha fatto la scelta giusta ritorna true altrimenti false
 
-   boolean risultato = controllaDatiPersona(personaAccettata);
+/* To: Roberto
+ * @autor Gaia: MODIFICA
+ * Motivo: comodità nella gestione dell'output 
+ * Azione: condensati i due metodi controllaPersonaAccettata (e rifiutata) in uno solo
+ *  
+ */
+
+ public static boolean controllaPersona(Persona persona, LocalDate giornoCorrente){  
+    if(controllaDatiPersona(persona, giornoCorrente) == true )
+    return true; //I dati sono corretti
+    else return false; //I dati sono sbagliati
+ }
+ 
+/*public static boolean controllaPersonaAccettata(Persona personaAccettata, LocalDate giornoCorrente){  //il metodo controlla la persona e se l'utente ha fatto la scelta giusta ritorna true altrimenti false
+
+   boolean risultato = controllaDatiPersona(personaAccettata, giornoCorrente);
 
   if(risultato == true  ){ //ovvero se i dati sono giusti e l'utente ha accettato allora ritornerà true altrimenti false 
 
@@ -28,9 +42,9 @@ public static boolean seAccetta(Persona personaAccettata){  //il metodo controll
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-public static boolean seRifiuta(Persona personaRifutata){ //il metodo controlla la persona e se l'utente ha fatto la scelta giusta ritorna true altrimenti false
+public static boolean controllaPersonaRifiutata(Persona personaRifutata, LocalDate giornoCorrente){ //il metodo controlla la persona e se l'utente ha fatto la scelta giusta ritorna true altrimenti false
 
-   boolean risultato = controllaDatiPersona(personaRifutata);
+   boolean risultato = controllaDatiPersona(personaRifutata, giornoCorrente);
     
    if(risultato == false  ){ //ovvero se i dati sono sbagliati e l'utente ha rifiutati allora ritornerà true altrimenti false 
 
@@ -44,7 +58,7 @@ public static boolean seRifiuta(Persona personaRifutata){ //il metodo controlla 
    
    return  giudizioScelta; 
 
-  }
+  }*/
 
 public static boolean controllaDatiPersona(Persona p, LocalDate giornoCorrente){      //metodo che controlla se il codice fiscale della persona è valido
   if(posizioniCorretteCF(p.getcF()) && (p.getSesso().equals(validitaGiornoESesso(p.getcF()))) && meseValido(p.getcF(), giornoCorrente)){
