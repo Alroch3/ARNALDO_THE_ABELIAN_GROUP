@@ -1,10 +1,13 @@
+import it.kibo.*;
+import it.kibo.fp.lib.Menu;
+
 public class InterazioniUtente {
 
   private static final String MSG_ENTRATA_ACCETTATA = "ENTRATA ACCETTATA";
   private static final String MSG_ENTRATA_RIFIUTATA = "ENTRATA RIFIUTATA";
 
-  public static void sceltaMenu() {
-
+  
+  public static void cmdUtenteSceglieStatusPersona() {
     int opzione = Display.visualizzaMenu();
     switch (opzione) {
       case 1:                             //Entrata accettata
@@ -24,6 +27,8 @@ public class InterazioniUtente {
         break;
     }
   }
+        
+        
 
   private static void seRifiuta() {
     System.out.println(MSG_ENTRATA_RIFIUTATA);

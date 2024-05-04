@@ -32,7 +32,9 @@ public class GestioneXML {
      * }
      */
 
-    public static void creaPersonaDaXML(Persona p, String idPersonaCercata) {    //Metodo che crea una persona con i dati presi dall'xml di una persona, la selezione della persona dell'XML avviene tramite il passaggio dell'indice alla chiamata del metodo creaPersonaDaXML
+    public static void creaPersonaDaXML(Persona p, String idPersonaCercata) {    //Metodo che crea una persona con i dati presi dall'xml di una persona,
+                                                                                // la selezione della persona dell'XML avviene tramite il passaggio dell'indice alla chiamata 
+                                                                                //del metodo creaPersonaDaXML
         final String filename = "src\\XML\\IDpersone.xml";                      //CLASSPATH XML IDpersone --NON MODIFICARE!--      
         XMLInputFactory xmlif = null;
         XMLStreamReader xmlr = null;
