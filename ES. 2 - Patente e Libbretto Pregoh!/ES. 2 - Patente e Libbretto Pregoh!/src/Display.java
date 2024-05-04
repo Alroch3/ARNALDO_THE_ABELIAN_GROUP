@@ -31,11 +31,6 @@ public class Display {
         // metodo che mostra la data odierna
     }
 
-    public static void mostraComuni() {
-
-        // per mostrare l'elenco dei comuni validi
-
-    }
 
     public static void visualizzaPersona() {
 
