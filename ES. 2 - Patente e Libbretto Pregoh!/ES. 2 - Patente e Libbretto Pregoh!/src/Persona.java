@@ -7,7 +7,7 @@ public class Persona {
     private String luogoDiNascita;
     private String cF;
     private String scadenza;
-    private boolean sceltaUtente;       //scelta da parte dell'utente ( non quella giusta )
+    private boolean sceltaUtente;       //scelta da parte dell'utente ( non quella giusta ) SERVE PER IL DIARIO
 
     public Persona(String nome, String cognome, String sesso, String data, String luogoDiNascita, String cF,
             String scadenza) {

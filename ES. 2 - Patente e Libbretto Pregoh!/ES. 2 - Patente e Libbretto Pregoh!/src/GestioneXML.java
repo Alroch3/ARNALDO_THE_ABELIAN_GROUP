@@ -11,6 +11,8 @@ import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
 import javax.xml.stream.XMLStreamWriter;
 
+//INSIEME DIARIO
+
 public class GestioneXML {
 
     private static boolean elementoTrovato = false;                             //booleano che ci dice se la persona selezionata dall'indice è stata trovata nell'XML
