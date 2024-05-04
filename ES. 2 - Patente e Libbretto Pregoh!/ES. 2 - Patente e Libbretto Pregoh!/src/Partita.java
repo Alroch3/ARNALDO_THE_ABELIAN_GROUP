@@ -27,7 +27,7 @@ public class Partita {
         //sistemare la questione package, non posso fare import java.nomeclasse!!
     }
 
-
+}
 
     
 
