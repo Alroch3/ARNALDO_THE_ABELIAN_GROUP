@@ -14,10 +14,10 @@ public class GiornoLavorativo {
     //---------- METODO MAIN SOLO PER DEBUG ----------//
     public static void main(String[] args) {            //solo test
 
-        personeDelGiorno[0] = new Persona("", "", "", "", "", "", "");      //Creo un oggetto persona con tutti gli attributi " " perchè se no non posso invocare metodi su Persona perchè è null
-        GestioneXML.creaPersonaDaXML(personeDelGiorno[0], "1");                                        //Chiamo il metodo creaPersonaDaXml nella classe Gestione XML passandogli la persona presa dall'array e l'indice della persona da cui leggere e scrivere i dati dall'XML
+        personeDelGiorno[0] = GestioneXML.creaPersonaDaXML("3");      //Creo un oggetto persona con tutti gli attributi " " perchè se no non posso invocare metodi su Persona perchè è null
+                                                                                       //Chiamo il metodo creaPersonaDaXml nella classe Gestione XML passandogli la persona presa dall'array e l'indice della persona da cui leggere e scrivere i dati dall'XML
 
-        //stampa per debug della persona 0 dell'array personeDeglGiorno 
+                                                                                    
         System.out.println(personeDelGiorno[0].toString());
     }
 

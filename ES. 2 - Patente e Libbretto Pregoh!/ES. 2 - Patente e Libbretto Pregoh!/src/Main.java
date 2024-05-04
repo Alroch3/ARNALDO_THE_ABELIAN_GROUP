@@ -11,19 +11,17 @@ public class Main {
         if(InputData.readYesOrNo("Vuoi visualizzare il regolamento")){
             Display.mostraRegolamento();
         }
+
+        
         
         System.out.println(GestioneXML.cercaComuneDaXML("SANGANO"));
 
-        LocalDate dataPersonalizzata = LocalDate.of(2023, 5, 15);
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        LocalDate dataPersonalizzata = LocalDate.of(2024, 4, 26);
+        dataPersonalizzata.plusDays(5);
+        //DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         
-        String dataFormattata = dataPersonalizzata.format(formatter);
-        System.out.println(dataFormattata);
+        System.out.println(dataPersonalizzata);
 
-        
-        Persona p1 = new Persona("", "", "", "", "", "", "");
-        GestioneXML.creaPersonaDaXML(p1, "5");
-        System.out.println(Controllore.controllaDatiPersona(p1, dataPersonalizzata));
         while(true){                                                            //implementare le condizioni affinchè si ha la fine del gioco
             GiornoLavorativo giorno = new GiornoLavorativo();
             //crea un oggetto GiornoLavorativo

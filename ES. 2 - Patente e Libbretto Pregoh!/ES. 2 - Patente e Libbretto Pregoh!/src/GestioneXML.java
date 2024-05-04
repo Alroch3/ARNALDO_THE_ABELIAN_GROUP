@@ -32,11 +32,12 @@ public class GestioneXML {
      * }
      */
 
-    public static void creaPersonaDaXML(Persona p, String idPersonaCercata) {    //Metodo che crea una persona con i dati presi dall'xml di una persona, la selezione della persona dell'XML avviene tramite il passaggio dell'indice alla chiamata del metodo creaPersonaDaXML
+    public static Persona creaPersonaDaXML(String idPersonaCercata) {    //Metodo che crea una persona con i dati presi dall'xml di una persona, la selezione della persona dell'XML avviene tramite il passaggio dell'indice alla chiamata del metodo creaPersonaDaXML
         final String filename = "src\\XML\\IDpersone.xml";                      //CLASSPATH XML IDpersone --NON MODIFICARE!--      
         XMLInputFactory xmlif = null;
         XMLStreamReader xmlr = null;
 
+        Persona p = new Persona("", "", "", "", "", "", "");
         boolean elementoTrovato = false;                             //booleano che ci dice se la persona selezionata dall'indice è stata trovata nell'XML
 
         try (FileInputStream reader = new FileInputStream(filename)) {
@@ -125,6 +126,7 @@ public class GestioneXML {
             System.out.println("Error in initializing the reader:");
             System.out.println(e.getMessage());
         }
+        return p;
     }
 
     public static String cercaComuneDaXML(String nomeComune){                //questo metodo prende come parametro il nome di un comune e restituisce il codice corrispondente del codice fiscale
