@@ -132,7 +132,7 @@ public class GestioneXML {
     }
 
     public static String cercaComuneDaXML(String nomeComune){                //questo metodo prende come parametro il nome di un comune e restituisce il codice corrispondente del codice fiscale
-        final String filename = "ES. 2 - Patente e Libbretto Pregoh!\\ES. 2 - Patente e Libbretto Pregoh!\\src\\GestioneXML.java";                      //CLASSPATH XML comuni --NON MODIFICARE!--      
+        final String filename = "ES. 2 - Patente e Libbretto Pregoh!\\ES. 2 - Patente e Libbretto Pregoh!\\src\\XML\\comuni.xml";                      //CLASSPATH XML comuni --NON MODIFICARE!--      
         XMLInputFactory xmlif = null;
         XMLStreamReader xmlr = null;
 
