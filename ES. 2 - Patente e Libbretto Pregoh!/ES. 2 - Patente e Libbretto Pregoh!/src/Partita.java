@@ -8,7 +8,7 @@ public class Partita {
     private static GiornoLavorativo [] giorniPartita = new GiornoLavorativo[11];
     private static LocalDate dataIniziale = LocalDate.of(2024, 4, 26);
     public static int contatoreGiorni = 1;
-    public static int statusGioco=0;
+    public static boolean statusGioco;
     
     //metodo da richiamare nel main per far andare il gioco!
     public static void gioco(){
@@ -38,7 +38,7 @@ public class Partita {
            contatoreGiorni++;
             
 
-        }while(Finali.IlgiocoDeveFinire(statusGioco)==0);
+        }while(statusGioco);
         //REPORT
         //QUA BISOGNA STAMPARE IL DIARIO (OPPURE ALLA FINE DI OGNI GIORNATA)
     }

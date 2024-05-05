@@ -14,7 +14,7 @@ public class Corruzione {
 
     public static void RivelaPersonaTentatrice() {
         int probabilita= RandomDraws.drawInteger(1, 100);
-        if(probabilita<=0){
+        if(probabilita<=70){
             System.out.println("La persona che hai fatto entrare era un rivoluzionario, ora la comunità ne subirà le conseguenze");
             }
         else {
