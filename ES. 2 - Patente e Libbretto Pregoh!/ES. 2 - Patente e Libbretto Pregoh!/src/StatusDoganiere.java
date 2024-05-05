@@ -35,5 +35,9 @@ public class StatusDoganiere{
             System.out.println("Sei in stato di arresto");
         }
     }
+    public static void aggiornaStipendio(int numPersonePassate){
+        conto+=50*numPersonePassate;
+
+    }
     //metodi: aggiornaConto ..
 }

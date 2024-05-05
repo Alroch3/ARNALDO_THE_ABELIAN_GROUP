@@ -37,17 +37,18 @@ public class Governo extends Partita{
         System.out.println("\nFaccia attenzione a quel che fa... la prossima pena è il carcere");
         }
     
-    } 
+     
 
-    /*public static void pagamentoTasse(){
+    public static void riscuoteTasse(){
         System.out.println("Sono passati due giorni, paga le tasse");
         StatusDoganiere.pagaTasse();
-    }*/
+    }
 
-   /* public static void daiStipendio(int numPersonePassate){
+   public static void daiStipendio(int numPersonePassate){
         System.out.printf("Il tuo stipendio giornaliero è di: %d", 50*numPersonePassate);
-    }*/
-    
+        StatusDoganiere.aggiornaStipendio(numPersonePassate);
+    }
+}
 
     //metodo per gestione stipendio giornaliero
 
