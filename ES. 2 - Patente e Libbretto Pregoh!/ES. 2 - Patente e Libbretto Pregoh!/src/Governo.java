@@ -33,7 +33,6 @@ public class Governo extends Partita{
     }
 
     public static void grandeMultaPerCorruzione() {
-        System.out.println("Multa: noterà le differenze dal suo conto...");
         StatusDoganiere.pagaMultaPerCorruzione();
         System.out.println("\nFaccia attenzione a quel che fa... la prossima pena è il carcere");
         }
