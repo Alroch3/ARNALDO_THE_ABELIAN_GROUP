@@ -4,15 +4,14 @@ import it.kibo.fp.lib.RandomDraws;
 
 public class GiornoLavorativo {
 
-    
     private static LocalDate giornoCorrente;   
     
     private int numPersonePassate;
 
     private static Persona[] personeDelGiorno = new Persona[7];   
     
-    public GiornoLavorativo(LocalDate giornoCorrent) {
-        giornoCorrent = giornoCorrente;
+    public GiornoLavorativo(LocalDate giornoCorrente) {
+        this.giornoCorrente = giornoCorrente;
     }
     
     //Metodo che crea un array di persone prese dall'XML e che ritorna l'array stesso

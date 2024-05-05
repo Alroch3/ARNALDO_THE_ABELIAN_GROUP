@@ -10,9 +10,9 @@ public class Governo extends Partita{
 
     // (2) L'utente ha ACCETTATO una persona con dati errati--> multa di 300 con 50% di probabilità
     public static void daiMultaTrecento(){
-         if((Controllore.controllaPersona(GiornoLavorativo.getUnaPersonaDallArray(contatoreGiorni-1), GiornoLavorativo.getGiornoCorrente()))==false){
+         if((Controllore.controllaPersona(GiornoLavorativo.getUnaPersonaDallArray(getContatoreGiorni()-1), GiornoLavorativo.getGiornoCorrente()))==false){
             int probabilita = RandomDraws.drawInteger(1, 100);
-                if(probabilita<=40){
+                if(probabilita<=50){
                     System.out.println("MULTA___300$___: la persona appena entrata deteneva documenti con dati errati");
                     StatusDoganiere.pagaMulta(TRECENTO_MULTA);
             }
@@ -22,7 +22,7 @@ public class Governo extends Partita{
     // (3) L'utente ha RIFIUTATO una persona con dati corretti
     public static void daiMultaCentoCinquanta(){
         
-        if((Controllore.controllaPersona(GiornoLavorativo.getUnaPersonaDallArray(contatoreGiorni-1), GiornoLavorativo.getGiornoCorrente()))==true){
+        if((Controllore.controllaPersona(GiornoLavorativo.getUnaPersonaDallArray(getContatoreGiorni()-1), GiornoLavorativo.getGiornoCorrente()))==true){
            int probabilita = RandomDraws.drawInteger(1, 100);
             if(probabilita<=50){
                 System.out.println("MULTA___150$___: la persona appena rifiutata deteneva documenti con dati corretti");
@@ -45,7 +45,7 @@ public class Governo extends Partita{
     }
 
    public static void daiStipendio(int numPersonePassate){
-        System.out.printf("Il tuo stipendio giornaliero è di: %d", 50*numPersonePassate);
+        System.out.printf("Il tuo stipendio giornaliero è di: %d", STIPENDIO_PER_GIORNO*numPersonePassate);
         StatusDoganiere.aggiornaStipendio(numPersonePassate);
     }
 }
