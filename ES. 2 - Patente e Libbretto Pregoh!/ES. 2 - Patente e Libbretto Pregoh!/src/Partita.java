@@ -10,15 +10,16 @@ public class Partita {
     private static GiornoLavorativo [] giorniPartita = new GiornoLavorativo[11];
     private static LocalDate dataIniziale = LocalDate.of(2024, 4, 26);
     private static int contatoreGiorni = 1;
+    
     private static boolean statusGioco;
     
     //metodo da richiamare nel main per far andare il gioco!
     public static void gioco(){
         Display.visualizzaInterfacciaIniziale();
-
         if(InputData.readYesOrNo("\tVuoi visualizzare" + TestoPersonalizzato.testoRossoeGrosso(" il regolamento ") + "di gioco")){
             Display.mostraRegolamento();
         }
+        
         //do while che segna lo scandire dei giorni
         do{
             creaGiorno(contatoreGiorni-1);
@@ -56,6 +57,10 @@ public class Partita {
     public static void seSonoPassatiDueGiorni(){
         if (contatoreGiorni%2==0 && contatoreGiorni!=0) Governo.riscuoteTasse();
     }
+<<<<<<< HEAD
+    
+     
+=======
 
     public static void setStatusGioco(boolean statusGioco) {
         Partita.statusGioco = statusGioco;
@@ -72,6 +77,7 @@ public class Partita {
         String dataFormattata = data.format(formatter);
         return dataFormattata;
     }
+>>>>>>> 8d6c52bc47d4d41aed6343acf6ea9ca7c5576b63
 }
 
 
