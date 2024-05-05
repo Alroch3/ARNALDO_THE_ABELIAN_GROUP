@@ -22,7 +22,7 @@ public class Display {
 
     public static void mostraRegolamento() {             // metodo che aiuta l'utente a capire in cosa consiste il gioco e come vincere
 
-        System.out.println("\t\nBENVENUTO alla frontiera del Burmini! Per non essere licenziato al primo giorno ci sono delle regole da rispettare..."
+        System.out.println("\t\n  Benvenuto alla frontiera del Burmini! Per non essere licenziato il primo giorno ci sono delle regole da rispettare..."
                         + "\t\n 1. Ogni giorno dovrai controllare delle persone e decidere se possono oltrepassare la frontiera"
                         + "\t\n 2. Se fai passare una persona con passaporto falso/scaduto avrai una possibilià di essere scoperti dal capo e prendere una multa di 300 sbleuri"
                         + "\t\n 3. Se non fai passare una persona che poteva entrare in modo regolare potresti essere punito e ricevere una multa di 150 sbleuri"
@@ -79,7 +79,7 @@ public class Display {
                 "dell'Accoglienza presso il presidio di frontiera Muskalf per il collocamento immediato. \n\tAlla tua famiglia verrà "
                 + //
                 "assegnato un appartamento di classe 8 a Muskalf Est.\r\n\n" +
-                TestoPersonalizzato.ANSI_BOLD+"\tBUON LAVORO E GLORIA AL BURMINI!\n\n "+ TestoPersonalizzato.ANSI_NORMAL);
+                TestoPersonalizzato.testoBluegrosso("\tBUON LAVORO E GLORIA AL BURMINI!\n\n "));
     }
 
     public static void visualizzaInizioGiorno(int giornoCorrente){
