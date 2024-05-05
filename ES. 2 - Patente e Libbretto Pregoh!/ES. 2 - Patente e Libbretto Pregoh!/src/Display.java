@@ -1,4 +1,3 @@
-import java.time.LocalDate;
 import org.fusesource.jansi.AnsiConsole;
 import it.kibo.fp.lib.*;
 
@@ -36,14 +35,18 @@ public class Display {
     public static void mostraGiorno() {     //serve all'utente per controllare se i documenti sono scaduti
 
         // metodo che mostra la data odierna 
-        System.out.println(" ");
+        System.out.println(Partita.getData());
+        InterazioniUtente.scegliDaMenu();
     }
 
-
-    public static void visualizzaPersona() {
-
-        // per visulaizzare i dati della persona da esaminare a schermo
+    public static void messaggioFinale(){
+        if(Finali.dodicesimoGiorno()){
+            System.out.println("HAI VINTO!");
+        }else{
+            System.out.println("HAI PERSO!");
+        }
     }
+
 
     public static void mostraContoResiduo() {
 
@@ -79,9 +82,10 @@ public class Display {
                 TestoPersonalizzato.testoBluegrosso("\tBUON LAVORO E GLORIA AL BURMINI!\n\n "));
     }
 
-    public static void visualizzaInizioGioco(int giornoCorrente){
-        System.out.print("GIORNO " + giornoCorrente + " DATA: ");
-        Display.mostraGiorno();
+    public static void visualizzaInizioGiorno(int giornoCorrente){
+        System.out.print("\nGIORNO " + giornoCorrente + " DATA: ");
+        System.out.println(Partita.getData());
+        System.out.println("\n");
     }
     /*
 
@@ -102,6 +106,13 @@ public class Display {
         int scelta = menuCorruzione.choose();
         return scelta;
 
+    }
+
+    public static boolean sicuroDiUscire() {
+        if(InputData.readYesOrNo("Sei sicuro di uscire dal programma? ")){
+            return true;
+        }
+        return false;
     }
 
    
