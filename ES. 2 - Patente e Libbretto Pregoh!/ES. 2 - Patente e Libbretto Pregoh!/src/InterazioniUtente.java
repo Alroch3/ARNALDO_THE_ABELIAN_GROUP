@@ -28,15 +28,35 @@ public class InterazioniUtente {
         break;
     }
   }
-        
+   
+  public static void scegliDaMenuCorruzione() {
+    int opzione = Display.visualizzaMenuCorruzione();
+    switch (opzione) {
+      case 1:                             //Entrata accettata
+        seAccettaCorruzione();
+        break;
+      case 2:                             //Entrata rifiutata
+        seRifiutaCorruzione();                      
+        break;
+      case 0:
+        //TOGLIERE USCITA
+        break;
+    }
+  }
+
+  private static void seRifiutaCorruzione() {
+    System.out.println("AAH, che brutta persona, te ne pentirai!!!");
+  }
+
+  private static void seAccettaCorruzione() {
+    Corruzione.RivelaPersonaTentatrice();    
+  }
+
   private static void seAccetta() {
     System.out.println(MSG_ENTRATA_ACCETTATA);
     Governo.daiMultaTrecento();
     
     //chiamata al controllore per verificare che i dati siano corretti, se il controllore ritorna falso chiamata alla classe governo per multa
-    
-
-
   }  
 
   private static void seRifiuta() {

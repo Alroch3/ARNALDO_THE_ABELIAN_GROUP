@@ -27,7 +27,9 @@ public class GiornoLavorativo {
 
     }
 
-
+    public static LocalDate getGiornoCorrente() {
+        return giornoCorrente;
+    }
     /*
      * @author Gaia:
      * 
@@ -49,9 +51,7 @@ public class GiornoLavorativo {
         return personeDelGiorno[indice].toString();
     }
 
-    public static LocalDate getGiornoCorrente() {
-        return giornoCorrente;
-    }
+    
 
     public int getNumPersonePassate() {
         return numPersonePassate;

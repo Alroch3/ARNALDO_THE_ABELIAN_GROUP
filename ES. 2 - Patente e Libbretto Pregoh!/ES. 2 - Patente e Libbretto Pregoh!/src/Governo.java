@@ -23,19 +23,23 @@ public class Governo extends Partita{
     // (3) L'utente ha RIFIUTATO una persona con dati corretti
     public static void daiMultaCentoCinquanta(){
         double probabilita;
-        if((Controllore.controllaPersona(GiornoLavorativo.getUnaPersonaDallArray(contatoreGiorni-1), GiornoLavorativo.getGiornoCorrente()))==false){
+        if((Controllore.controllaPersona(GiornoLavorativo.getUnaPersonaDallArray(contatoreGiorni-1), GiornoLavorativo.getGiornoCorrente()))==true){
             probabilita = RandomDraws.drawInteger(1, 100);
             if(probabilita<=50){
                 System.out.println("MULTA___150$___: la persona appena rifiutata deteneva documenti con dati corretti");
                 StatusDoganiere.pagaMulta(CENTOCINQUANTA_MULTA);
             }
           }
+          else Corruzione.provanoACorrompere();
     }
-        
-                
+
+    public static void grandeMultaPerCorruzione() {
+        System.out.println("Multa: noterà le differenze dal suo conto...");
+        StatusDoganiere.pagaMultaPerCorruzione();
+        System.out.println("Faccia attenzione a quel che fa... la prossima pena è il carcere: ");
         }
     
-        
+    } 
     
 
     //metodo per gestione stipendio giornaliero

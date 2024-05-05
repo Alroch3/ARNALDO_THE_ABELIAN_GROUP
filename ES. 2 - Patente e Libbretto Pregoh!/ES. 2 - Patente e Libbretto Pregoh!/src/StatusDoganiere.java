@@ -1,7 +1,7 @@
 public class StatusDoganiere{
 
     private static final int TASSE= 200;
-    //conto
+    //conto, valore iniziale
     private static double conto=300;
 
     public static void pagaMulta(double daPagare){
@@ -15,6 +15,14 @@ public class StatusDoganiere{
             
         }
     }
+
+    public static void pagaMultaPerCorruzione() {
+        double multaPerCorruzione= conto*100/60;
+        System.out.printf("devi pagare %f $", multaPerCorruzione);
+        conto=conto-multaPerCorruzione;
+        System.out.printf("Il tuo saldo attuale: ", conto);
+                
+      }
     
     //metodi: aggiornaConto ..
 }

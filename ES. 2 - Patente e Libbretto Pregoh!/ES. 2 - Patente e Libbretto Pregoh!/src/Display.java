@@ -7,6 +7,7 @@ public class Display {
     //---------- REFACTOR ----------//
 
     private static final String TITOLO_MENU = "Menu principale";
+    private static final String TITOLO_MENU_CORRUZIONE = "Signore, ACCETTI LA MIA OFFERTA... in cambio della mia entrata";
 
     //---------- VOCI MENU ----------//
     private static final String vociMenu [] = {
@@ -14,6 +15,10 @@ public class Display {
         "RIFIUTARE ENTRATA",
         "REGOLAMENTO",
         "VISUALIZZA GIORNO"
+    };
+    private static final String vociMenuCorruzione [] = {
+        "ACCETTARE OFFERTA",
+        "RIFIUTARE L'OFFERTA",
     };
 
     public static void mostraRegolamento() {             // metodo che aiuta l'utente a capire in cosa consiste il gioco e come vincere
@@ -91,4 +96,14 @@ public class Display {
 
     }
     */
+    public static int visualizzaMenuCorruzione() {// da richiamare su richiesta dell'utente
+        Menu menuCorruzione = new Menu(TITOLO_MENU_CORRUZIONE, vociMenuCorruzione, true, true, true);
+        int scelta = menuCorruzione.choose();
+        return scelta;
+
+    }
+
+   
+
+
 }
