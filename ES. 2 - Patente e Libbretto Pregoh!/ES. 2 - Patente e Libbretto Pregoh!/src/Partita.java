@@ -8,7 +8,7 @@ public class Partita {
     private static GiornoLavorativo [] giorniPartita = new GiornoLavorativo[11];
     private static LocalDate dataIniziale = LocalDate.of(2024, 4, 26);
     public static int contatoreGiorni = 1;
-    private static boolean boo=false;
+    public static int statusGioco=0;
     
     //metodo da richiamare nel main per far andare il gioco!
     public static void gioco(){
@@ -26,14 +26,19 @@ public class Partita {
             for(int i = 0; i < giorniPartita[contatoreGiorni-1].getNumPersonePassate(); i++){
                 System.out.println(giorniPartita[contatoreGiorni-1].toString(i));
                 InterazioniUtente.scegliDaMenu();
+                
             }
 
             //alla fine del giorno mostrare: conto in banca, multe ecc.. 
             
-            //Aumento contatori
-            contatoreGiorni++;
+            //DA FINIRE: GESTIONE STIPENDIO GIORNALIERO
+           // if (contatoreGiorni%2==0) Governo.daiStipendio(giorniPartita.getNumPersonePassate());
+           
+           //Aumento contatori 
+           contatoreGiorni++;
+            
 
-        }while(boo);
+        }while(Finali.IlgiocoDeveFinire(statusGioco)==0);
         //REPORT
         //QUA BISOGNA STAMPARE IL DIARIO (OPPURE ALLA FINE DI OGNI GIORNATA)
     }
@@ -47,10 +52,7 @@ public class Partita {
     }
 }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 80b983e3a37b627e8f75ee214bbc6e64206c36c7
 
     
 

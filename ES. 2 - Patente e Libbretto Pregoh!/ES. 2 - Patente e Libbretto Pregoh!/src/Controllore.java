@@ -7,7 +7,20 @@ public class Controllore extends Partita{
   private static boolean giudizioScelta= false;
   private static boolean risultatoControllo = false;
 
-  public static void main(String[] args) {
+ 
+ /**
+  * To: Roberto
+  * @author Gaia
+  *  Motivo: comodità nell'output da manipolare con altri metodi
+  *  Azione: ho commentato i due metodi seAccetta/Rifiuta e ne ho creato uno solo equivalente
+  */
+
+  public static boolean controllaPersona(Persona persona, LocalDate giornoCorrente){  
+    if(controllaDatiPersona(persona, giornoCorrente) == true)
+    return true; //I dati sono corretti
+    else return false; //I dati sono sbagliati
+ }
+  /*public static void main(String[] args) {
     Persona p = GestioneXML.creaPersonaDaXML(1);
     System.out.println(controllaDatiPersona(p));
   }
@@ -48,10 +61,10 @@ public class Controllore extends Partita{
    return  giudizioScelta; 
 
   }
-
+*/
   // CONTROLLO CODICE FISCALE CON CONTROLLO INCROCIATO CON I DATI DELLA PERSONA
 
-  public static boolean controllaDatiPersona(Persona p){      //metodo che controlla se il codice fiscale della persona è valido
+  public static boolean controllaDatiPersona(Persona p, LocalDate giornoCorrente){      //metodo che controlla se il codice fiscale della persona è valido
     if(posizioniCorretteCF(p.getcF()) && validitaGiornoESesso(p.getcF(), p.getSesso(), p.getData()) 
       && meseValido(p.getcF(), p.getData()) && annoValido(p.getcF(), p.getData()) && controlloComune(p.getcF(), p.getLuogoDiNascita())){
       return true;
