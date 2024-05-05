@@ -13,7 +13,7 @@ public class TestoPersonalizzato {
 
     public static String testoRossoeGrosso(String testo){
 
-         AnsiConsole.systemInstall();
+        AnsiConsole.systemInstall();
         String testoModificato =ANSI_BOLD+"\u001B[31m"+ testo +"\u001B[0m"+ ANSI_NORMAL;//per avere il testo rosso
         AnsiConsole.systemUninstall();
         return testoModificato;
