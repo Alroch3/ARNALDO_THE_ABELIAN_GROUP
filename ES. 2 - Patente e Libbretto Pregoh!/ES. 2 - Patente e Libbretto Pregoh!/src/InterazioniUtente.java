@@ -1,7 +1,3 @@
-import it.kibo.*;
-import it.kibo.fp.lib.Menu;
-import it.kibo.fp.lib.RandomDraws;
-
 public class InterazioniUtente {
 
   private static final String MSG_ENTRATA_ACCETTATA = "ENTRATA ACCETTATA";
@@ -24,8 +20,16 @@ public class InterazioniUtente {
         Display.mostraGiorno();      
         break;
       case 0:
-        //gestire l'uscita dal gioco
+        uscitaDalGioco();
         break;
+    }
+  }
+
+  private static void uscitaDalGioco() {
+    if(Display.sicuroDiUscire()){
+      System.exit(0);
+    }else{
+      InterazioniUtente.scegliDaMenu();
     }
   }
    
@@ -37,9 +41,6 @@ public class InterazioniUtente {
         break;
       case 2:                             //Entrata rifiutata
         seRifiutaCorruzione();                      
-        break;
-      case 0:
-        //TOGLIERE USCITA
         break;
     }
   }
