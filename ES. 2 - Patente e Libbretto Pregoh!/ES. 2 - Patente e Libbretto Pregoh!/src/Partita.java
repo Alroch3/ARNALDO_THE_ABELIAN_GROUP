@@ -14,7 +14,7 @@ public class Partita {
     public static void gioco(){
         Display.visualizzaInterfacciaIniziale();
 
-        if(InputData.readYesOrNo("Vuoi visualizzare il regolamento")){
+        if(InputData.readYesOrNo("\tVuoi visualizzare" + TestoPersonalizzato.testoRossoeGrosso(" il regolamento ") + "di gioco")){
             Display.mostraRegolamento();
         }
         //do while che segna lo scandire dei giorni

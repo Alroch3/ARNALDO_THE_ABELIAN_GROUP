@@ -1,5 +1,5 @@
 import java.time.LocalDate;
-
+import org.fusesource.jansi.AnsiConsole;
 import it.kibo.fp.lib.*;
 
 public class Display {
@@ -11,8 +11,8 @@ public class Display {
 
     //---------- VOCI MENU ----------//
     private static final String vociMenu [] = {
-        "ACCETTARE ENTRATA",
-        "RIFIUTARE ENTRATA",
+        TestoPersonalizzato.testoVerdeegrosso("ACCETTARE ENTRATA"),
+        TestoPersonalizzato.testoRossoeGrosso("RIFIUTARE ENTRATA"),
         "REGOLAMENTO",
         "VISUALIZZA GIORNO"
     };
@@ -23,13 +23,13 @@ public class Display {
 
     public static void mostraRegolamento() {             // metodo che aiuta l'utente a capire in cosa consiste il gioco e come vincere
 
-        System.out.println("Benvenuto alla frontiera del Burmini! Per non essere licenziato al primo giorno ci sono delle regole che bisogna seguire..."
-                        + "\n 1. Ogni giorno dovrai controllare delle persone e decidere se possono oltrepassare la frontiera"
-                        + "\n 2. Se fai passare una persona con passaporto falso/scaduto avrai una possibilià di essere scoperti dal capo e prendere una multa di 300 sbleuri"
-                        + "\n 3. Se non fai passare una persona che poteva entrare in modo regolare potrai essere punito e ricevere una multa di 150 sbleuri"
-                        + "\n 4. Se svolgi il suo lavoro e rifiuta una persona non in regola essa potrebbe provare a corromperla...Ci PENSI DUE VOLTE AD ACCETTARE!!!"
-                        + "\n 5. c'è una buona notizia e una cattiva... ogni persona controllata sono 50 sbleuri ma ogni 3 giorni dovrà pagare 200 sbleuri di tasse...( fossi in lei non evaderei)"
-                        + "\n (Detto tra noi... il Burmini sta diventando un paese pericoloso, se vuole sopravvivere dovrà intascare 2300 sblueri in 12 giorni e io mi occuperò della sua fuga)");
+        System.out.println("\t\nBENVENUTO alla frontiera del Burmini! Per non essere licenziato al primo giorno ci sono delle regole da rispettare..."
+                        + "\t\n 1. Ogni giorno dovrai controllare delle persone e decidere se possono oltrepassare la frontiera"
+                        + "\t\n 2. Se fai passare una persona con passaporto falso/scaduto avrai una possibilià di essere scoperti dal capo e prendere una multa di 300 sbleuri"
+                        + "\t\n 3. Se non fai passare una persona che poteva entrare in modo regolare potresti essere punito e ricevere una multa di 150 sbleuri"
+                        + "\t\n 4. Se svolgi il tuo lavoro e rifiuti una persona non in regola essa potrebbe provare a corromperti...PENSACI DUE VOLTE AD ACCETTARE!!!"
+                        + "\t\n 5. C'è una buona notizia e una cattiva... ogni persona controllata sono 50 sbleuri ma ogni 3 giorni dovrai pagare 200 sbleuri di tasse...( fossi in te non evaderei)"
+                        +"\t\n (Detto tra noi... il Burmini sta diventando un paese pericoloso, se vuoi fuggire in tempo mi dovrai portare 2300 in massimo 12 giorni del resto mi occuperò io)\n\n");
 
     }
 
@@ -69,13 +69,14 @@ public class Display {
 
     public static void visualizzaInterfacciaIniziale() {// da richiamare solo la prima volta all'inizio
 
-        System.out.println("“Congratulazioni!\r\n" +
-                "La lotteria del lavoro di aprile è terminata. È stato estratto il tuo nome, Ajeje Brazorf. Fai rapporto al Ministero \r\n"
+        AnsiConsole.out().println("\n\n\t\t\t"+TestoPersonalizzato.testoRossoeGrosso("CONGRATULAZIONI!")+"\n");//per avere il testo rosso
+        
+              System.out.println("\tLa lotteria del lavoro di aprile è terminata. E' stato estratto il tuo nome, Ajeje Brazorf.\n\tFai rapporto al Ministero "
                 + //
-                "dell'Accoglienza presso il presidio di frontiera Muskalf per il collocamento immediato. Alla tua famiglia verrà \r\n"
+                "dell'Accoglienza presso il presidio di frontiera Muskalf per il collocamento immediato. \n\tAlla tua famiglia verrà "
                 + //
-                "assegnato un appartamento di classe 8 a Muskalf Est.\r\n" +
-                "BUON LAVORO E GLORIA AL BURMINI!” ");
+                "assegnato un appartamento di classe 8 a Muskalf Est.\r\n\n" +
+                TestoPersonalizzato.ANSI_BOLD+"\tBUON LAVORO E GLORIA AL BURMINI!\n\n "+ TestoPersonalizzato.ANSI_NORMAL);
     }
 
     public static void visualizzaInizioGioco(int giornoCorrente){
