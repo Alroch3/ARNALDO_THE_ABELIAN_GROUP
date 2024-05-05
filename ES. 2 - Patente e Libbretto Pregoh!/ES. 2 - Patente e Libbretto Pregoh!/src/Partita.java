@@ -47,6 +47,10 @@ public class Partita {
     }
 }
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 80b983e3a37b627e8f75ee214bbc6e64206c36c7
 
     
 
