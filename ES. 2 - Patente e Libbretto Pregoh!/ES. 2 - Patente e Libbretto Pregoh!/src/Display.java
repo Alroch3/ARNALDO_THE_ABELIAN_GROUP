@@ -6,7 +6,7 @@ public class Display {
     //---------- REFACTOR ----------//
 
     private static final String TITOLO_MENU = "Menu principale";
-    private static final String TITOLO_MENU_CORRUZIONE = "Signore, ACCETTI LA MIA OFFERTA... in cambio della mia entrata";
+    private static final String TITOLO_MENU_CORRUZIONE = "PROPOSTA DA TIZIO LOSCO";
 
     //---------- VOCI MENU ----------//
     private static final String vociMenu [] = {

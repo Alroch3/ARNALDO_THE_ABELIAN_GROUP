@@ -6,7 +6,7 @@ public class Corruzione {
         int probabilita= RandomDraws.drawInteger(1, 100);
         if(probabilita<=40){
             int mazzetta= RandomDraws.drawInteger(250, 500);
-            System.out.printf("Le offro questi soldi %d in cambio dell'entrata", mazzetta);
+            System.out.printf("\ntipo losco :\"Ehi, guarda questa foto del mio gatto. Non è adorabile? Oh, e guarda, c’è un biglietto da %d sbleuri attaccato dietro...\"\n", mazzetta);
             InterazioniUtente.scegliDaMenuCorruzione();
             
           }
@@ -15,7 +15,7 @@ public class Corruzione {
     public static void RivelaPersonaTentatrice() {
         int probabilita= RandomDraws.drawInteger(1, 100);
         if(probabilita<=70){
-            System.out.println(TestoPersonalizzato.testoRossoeGrosso("La persona che hai fatto entrare era un RIVOLUZIONARIO, ora la comunità ne subirà le conseguenze"));
+            System.out.println(TestoPersonalizzato.testoRossoeGrosso("C'era una volta UN RIVOLUZIONARIO...\nsi proprio quello che hai fatto entrare...\n")+ "\nOra il paese si prepara ad un esplosione di cambiamenti!");
             }
         else {
             System.out.println(TestoPersonalizzato.testoRossoeGrosso(" \"Ci sono guai per lei...\" la persona mostra il documento_ \"POLIZIA IN BORGHESE\" "));
