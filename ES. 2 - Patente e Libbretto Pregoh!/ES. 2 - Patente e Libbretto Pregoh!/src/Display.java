@@ -16,19 +16,22 @@ public class Display {
         "VISUALIZZA GIORNO"
     };
     private static final String vociMenuCorruzione [] = {
-        "ACCETTARE OFFERTA",
-        "RIFIUTARE L'OFFERTA",
+        TestoPersonalizzato.testoVerdeegrosso("ACCETTARE L'OFFERTA"),
+        TestoPersonalizzato.testoRossoeGrosso("RIFIUTARE L'OFFERTA"),
     };
 
     public static void mostraRegolamento() {             // metodo che aiuta l'utente a capire in cosa consiste il gioco e come vincere
 
         System.out.println("\nBenvenuto alla frontiera del Burmini!\nPer non essere licenziato il primo giorno ci sono delle regole da rispettare..."
                         + "\t\n\n1. Ogni giorno dovrai controllare delle persone e decidere se possono oltrepassare la frontiera"
-                        + "\t\n\n2. Se fai passare una persona con passaporto falso/scaduto avrai una possibilià di essere scoperto dal    capo e prendere una multa di 300 sbleuri"
-                        + "\t\n\n3. Se non fai passare una persona che poteva entrare in modo regolare potresti essere punito e ricevere   una multa di 150 sbleuri"
-                        + "\t\n\n4. Se svolgi il tuo lavoro e rifiuti una persona non in regola essa potrebbe provare a corromperti...     PENSACI DUE VOLTE AD ACCETTARE!!!"
-                        + "\t\n\n5. C'è una buona notizia e una cattiva... ogni persona controllata sono 50 sbleuri ma ogni 3 giorni       dovrai pagare 200 sbleuri di tasse...( fossi in te non evaderei)"
-                        +"\t\n\n (Detto tra noi... il Burmini sta diventando un paese pericoloso, se vuoi fuggire in tempo mi dovrai      portare 2300 in massimo 12 giorni del resto mi occuperò io)\n\n");
+                        + "\t\n\n2. Se ACCETTI con passaporto falso/scaduto avrai una possibilià di essere scoperto dal capo\n   e potresti una multa di 300 sbleuri"
+                        + "\t\n\n3. Se RIFIUTI una persona che poteva entrare in modo regolare\n   potresti essere punito e ricevere una multa di 150 sbleuri"
+                        + "\t\n\n4. Se svolgi il tuo lavoro e rifiuti una persona non in regola essa potrebbe provare a corromperti...\n   PENSACI DUE VOLTE AD ACCETTARE!!!"
+                        + "\t\n\n5. C'è una buona notizia e una cattiva...\n   ogni persona controllata sono 50 sbleuri.\n   Ogni 3 giorni dovrai pagare 200 sbleuri di tasse...( fossi in te non evaderei)"
+                        +"\t\n\n  (Detto tra noi... il Burmini sta diventando un paese pericoloso,\n  se vuoi fuggire in tempo mi dovrai portare 2300 in massimo 12 giorni del resto mi occuperò io)\n\n"
+                        + "\t\n  COMPOSIZIONE CODICE FISCALE :\n  3 LETTERE --> COGNOME\n  3 LETTERE --> NOME"
+                        +"\n  2 CIFRE --> ANNO DI NASCITA\n  1 LETTERA --> MESE DI NASCITA\n  2 CIFRE --> GIORNO DI NASCITA "
+                        + "\n  1 LETTERA + 3 CIFRE --> LUOGO DI NASCITA\n  1 LETTERA --> CARATTERE DI CONTROLLO\n\n");
 
     }
 
@@ -41,9 +44,9 @@ public class Display {
 
     public static void messaggioFinale(){
         if(Finali.dodicesimoGiorno()){
-            System.out.println("HAI VINTO!");
+            System.out.println(TestoPersonalizzato.testoVerdeegrosso("\n\tHAI VINTO!"));
         }else{
-            System.out.println("HAI PERSO!");
+            System.out.println(TestoPersonalizzato.testoRossoeGrosso("\n\tHAI PERSO!"));
         }
     }
 
@@ -83,8 +86,8 @@ public class Display {
     }
 
     public static void visualizzaInizioGiorno(int giornoCorrente){
-        System.out.print("\nGIORNO " + giornoCorrente + " DATA: ");
-        System.out.println(Partita.getData());
+        System.out.print( TestoPersonalizzato.ANSI_BOLD + "\nGIORNO " + giornoCorrente + " DATA: ");
+        System.out.println(Partita.getData() + TestoPersonalizzato.ANSI_NORMAL);
         System.out.println("\n");
     }
     /*

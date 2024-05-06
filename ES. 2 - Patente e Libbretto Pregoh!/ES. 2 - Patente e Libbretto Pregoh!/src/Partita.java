@@ -57,10 +57,6 @@ public class Partita {
     public static void seSonoPassatiDueGiorni(){
         if (contatoreGiorni%2==0 && contatoreGiorni!=0) Governo.riscuoteTasse();
     }
-<<<<<<< HEAD
-    
-     
-=======
 
     public static void setStatusGioco(boolean statusGioco) {
         Partita.statusGioco = statusGioco;
@@ -77,7 +73,6 @@ public class Partita {
         String dataFormattata = data.format(formatter);
         return dataFormattata;
     }
->>>>>>> 8d6c52bc47d4d41aed6343acf6ea9ca7c5576b63
 }
 
 

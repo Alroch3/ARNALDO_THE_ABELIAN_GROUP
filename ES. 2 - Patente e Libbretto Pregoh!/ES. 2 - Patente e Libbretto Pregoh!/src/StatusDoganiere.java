@@ -28,7 +28,8 @@ public class StatusDoganiere{
         if (conto<=0){
             System.out.println("Il tuo saldo è insufficiente, non puoi effettuare il pagamento");
             Finali.nonPuoPagare();
-            System.out.println("Sei in stato di arresto");
+            System.out.println("Sembra che tu abbia appena scambiato la tua divisa da guardia di confine per una tuta arancione!\n"
+            + TestoPersonalizzato.testoBluegrosso("\n\t||||||||||||||||||||||||||||| SEI IN STATO DI ARRESTO |||||||||||||||||||||||||||||\n\n\n"));
         }
     }
     public static void aggiornaStipendio(int numPersonePassate){

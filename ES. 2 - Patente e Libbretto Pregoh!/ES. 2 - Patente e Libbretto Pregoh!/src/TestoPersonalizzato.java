@@ -30,7 +30,7 @@ public class TestoPersonalizzato {
        public static String testoBluegrosso(String testo){
 
         AnsiConsole.systemInstall();
-       String testoModificato = "\033[1;34m"+ testo + "\033" ;//per avere il testo bli
+       String testoModificato = "\033[1;34m"+ testo + ANSI_NORMAL ;//per avere il testo bli
        AnsiConsole.systemUninstall();
        return testoModificato;
 
