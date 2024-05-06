@@ -2,6 +2,8 @@ public class Finali {
 
     private static final int CONTO_PER_VINCERE = 2300;
     private final static double EPSILLON = 0.00001; 
+
+    
     public static void nonPuoPagare(){
         Partita.setStatusGioco(true); 
     }

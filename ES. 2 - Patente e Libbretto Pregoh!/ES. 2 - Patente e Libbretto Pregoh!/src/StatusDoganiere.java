@@ -10,7 +10,6 @@ public class StatusDoganiere{
 
     public static void pagaMulta(double daPagare){
         contMulte += daPagare;
-        //disponibilitaSulConto(conto);
     }
 
     
@@ -18,13 +17,11 @@ public class StatusDoganiere{
         double multaPerCorruzione= risparmi*100/60;
         contMulte += multaPerCorruzione;
         System.out.printf("devi pagare %f $", multaPerCorruzione);
-        //disponibilitaSulConto(conto);
         System.out.printf("Il tuo saldo attuale: %f", conto);
       }
     
       public static void pagaTasse(){
         contTasse = TASSE;
-        //disponibilitaSulConto(conto);
     }
     
 
@@ -46,6 +43,7 @@ public class StatusDoganiere{
     }
 
     public static void aggiornaRisparmi(){
+        disponibilitaSulConto(conto);
         risparmi = conto;
         contMulte = 0;
         stipendio = 0;

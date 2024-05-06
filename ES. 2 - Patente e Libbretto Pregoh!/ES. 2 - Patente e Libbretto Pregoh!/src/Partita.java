@@ -31,8 +31,9 @@ public class Partita {
             System.out.println(StatusDoganiere.toString(contatoreGiorni));
             StatusDoganiere.aggiornaRisparmi();
             contatoreGiorni++;
-            statusGioco = Finali.dodicesimoGiorno();
-            
+            if(statusGioco == false){
+                statusGioco = Finali.dodicesimoGiorno();
+            }
         }while(!statusGioco);
 
         Display.messaggioFinale();
