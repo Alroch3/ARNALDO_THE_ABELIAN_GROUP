@@ -1,27 +1,32 @@
 public class StatusDoganiere{
 
-    private static final int TASSE= 200;
+    private static final float TASSE= 200;
     //conto, valore iniziale
+    private static double risparmi=300;
     private static double conto=300;
+    private static double contMulte=0;
+    private static double stipendio=0;
+    private static double contTasse = 0;
 
     public static void pagaMulta(double daPagare){
-        conto = conto - daPagare;
-        disponibilitaSulConto(conto);
+        contMulte += daPagare;
+        //disponibilitaSulConto(conto);
     }
 
     
     public static void pagaMultaPerCorruzione() {
-        double multaPerCorruzione= conto*100/60;
+        double multaPerCorruzione= risparmi*100/60;
+        contMulte += multaPerCorruzione;
         System.out.printf("devi pagare %f $", multaPerCorruzione);
-        conto=conto-multaPerCorruzione;
-        disponibilitaSulConto(conto);
+        //disponibilitaSulConto(conto);
         System.out.printf("Il tuo saldo attuale: %f", conto);
       }
     
       public static void pagaTasse(){
-        conto=conto-TASSE;
-        disponibilitaSulConto(conto);
+        contTasse = TASSE;
+        //disponibilitaSulConto(conto);
     }
+    
 
     //DA PROGETTARE GESIONE FINALI!!
     public static void disponibilitaSulConto(double conto){
@@ -33,12 +38,38 @@ public class StatusDoganiere{
         }
     }
     public static void aggiornaStipendio(int numPersonePassate){
-        conto+=50*numPersonePassate;
+        stipendio = Governo.getStipendioPerGiorno()*numPersonePassate;
+    }
 
+    public static void calcolaConto(){
+        conto = risparmi + stipendio - contMulte - contTasse;
+    }
+
+    public static void aggiornaRisparmi(){
+        risparmi = conto;
+        contMulte = 0;
+        stipendio = 0;
+        contTasse = 0;
     }
 
     public static double getConto() {
         return conto;
     }
     //metodi: aggiornaConto ..
+
+    public static String toString(int numGiorno) {          //il toString stampa il report a fine giornata
+        StringBuffer report = new StringBuffer();
+        report.append("\nREPORT GIORNALIERO: \n");
+        report.append(String.format("Fine del GIORNO %d \n", numGiorno));
+        report.append(String.format("RISPARMI: %.0f\n", risparmi));
+        report.append(String.format("STIPENDIO: %.0f\n", stipendio));
+        if(contMulte!=0){
+            report.append(String.format("MULTE: %.0f\n", contMulte));
+        }
+        if(contTasse != 0){
+            report.append(String.format("TASSE: %.0f \n", TASSE));
+        }
+        report.append(String.format("TOT: %.0f \n", conto));
+        return report.toString();
+    }
 }

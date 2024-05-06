@@ -11,7 +11,7 @@ public class Partita {
     private static LocalDate dataIniziale = LocalDate.of(2024, 4, 26);
     private static int contatoreGiorni = 1;
     
-    private static boolean statusGioco;
+    private static boolean statusGioco = false; 
     
     //metodo da richiamare nel main per far andare il gioco!
     public static void gioco(){
@@ -27,10 +27,13 @@ public class Partita {
             scelteDaMenu();
             Governo.daiStipendio(giorniPartita[contatoreGiorni-1].getNumPersonePassate());
             seSonoPassatiDueGiorni();
+            StatusDoganiere.calcolaConto();
+            System.out.println(StatusDoganiere.toString(contatoreGiorni));
+            StatusDoganiere.aggiornaRisparmi();
             contatoreGiorni++;
             statusGioco = Finali.dodicesimoGiorno();
             
-        }while(statusGioco);
+        }while(!statusGioco);
 
         Display.messaggioFinale();
 
@@ -40,7 +43,8 @@ public class Partita {
 
     private static void scelteDaMenu() {
         for(int i = 0; i < giorniPartita[contatoreGiorni-1].getNumPersonePassate(); i++){
-            System.out.println(giorniPartita[contatoreGiorni-1].toString(i));
+            System.out.printf("Persona %d\n\n", i+1);
+            System.out.println(giorniPartita[contatoreGiorni-1].toString(i) + "\n");
             InterazioniUtente.scegliDaMenu();   
         }
     }
@@ -54,8 +58,12 @@ public class Partita {
         giorniPartita[indice] = nuovoGiorno;
     }
 
-    public static void seSonoPassatiDueGiorni(){
-        if (contatoreGiorni%2==0 && contatoreGiorni!=0) Governo.riscuoteTasse();
+    public static boolean seSonoPassatiDueGiorni(){
+        if (contatoreGiorni%2==0 && contatoreGiorni!=0) {
+            Governo.riscuoteTasse();
+            return true;
+        }
+        return false;
     }
 
     public static void setStatusGioco(boolean statusGioco) {

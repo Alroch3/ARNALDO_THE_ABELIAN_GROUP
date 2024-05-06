@@ -81,8 +81,12 @@ public class Governo extends Partita{
     }
 
    public static void daiStipendio(int numPersonePassate){
-        System.out.printf("Il tuo stipendio giornaliero è di: %d sbleuri", STIPENDIO_PER_GIORNO*numPersonePassate);
+        //System.out.printf("Il tuo stipendio giornaliero è di: %d sbleuri", STIPENDIO_PER_GIORNO*numPersonePassate);
         StatusDoganiere.aggiornaStipendio(numPersonePassate);
+    }
+
+    public static int getStipendioPerGiorno() {
+        return STIPENDIO_PER_GIORNO;
     }
 }
 

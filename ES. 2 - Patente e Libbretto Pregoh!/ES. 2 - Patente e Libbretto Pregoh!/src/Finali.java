@@ -7,7 +7,7 @@ public class Finali {
     }
 
     public static boolean dodicesimoGiorno(){
-        if(Partita.getContatoreGiorni() == 12 && (StatusDoganiere.getConto() - CONTO_PER_VINCERE) < EPSILLON ){
+        if(Partita.getContatoreGiorni() == 12 && (CONTO_PER_VINCERE - StatusDoganiere.getConto()) < EPSILLON ){
             return true;
         }
         return false;
