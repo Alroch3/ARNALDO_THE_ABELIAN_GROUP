@@ -57,14 +57,13 @@ public class Governo extends Partita{
 
     // (3) L'utente ha RIFIUTATO una persona con dati corretti
     public static void daiMultaCentoCinquanta(){
-        
         if((Controllore.controllaPersona(GiornoLavorativo.getUnaPersonaDallArray(getContatoreGiorni()-1), GiornoLavorativo.getGiornoCorrente()))==true){
-           int probabilita = RandomDraws.drawInteger(1, 100);
+            int probabilita = RandomDraws.drawInteger(1, 100);
             if(probabilita<=50){
                 System.out.println(TestoPersonalizzato.testoRossoeGrosso("MULTA___150$___: la persona appena rifiutata deteneva documenti con dati corretti"));
                 StatusDoganiere.pagaMulta(CENTOCINQUANTA_MULTA);
             }
-          }
+        }
           else Corruzione.provanoACorrompere();
     }
 

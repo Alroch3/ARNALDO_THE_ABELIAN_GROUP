@@ -2,7 +2,7 @@ import java.time.LocalDate;
 
 // ROBERTO
 
-public class Controllore extends Partita{
+public class Controllore{
 
   private static boolean giudizioScelta= false;
   private static boolean risultatoControllo = false;
@@ -15,53 +15,12 @@ public class Controllore extends Partita{
   *  Azione: ho commentato i due metodi seAccetta/Rifiuta e ne ho creato uno solo equivalente
   */
 
-  public static boolean controllaPersona(Persona persona, LocalDate giornoCorrente){  
+  public static boolean controllaPersona(Persona persona, LocalDate giornoCorrente){  //????????????????
     if(controllaDatiPersona(persona, giornoCorrente) == true)
     return true; //I dati sono corretti
     else return false; //I dati sono sbagliati
  }
-  /*public static void main(String[] args) {
-    Persona p = GestioneXML.creaPersonaDaXML(1);
-    System.out.println(controllaDatiPersona(p));
-  }
-//------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  public static boolean seAccetta(Persona personaAccettata){  //il metodo controlla la persona e se l'utente ha fatto la scelta giusta ritorna true altrimenti false
-
-    boolean risultato = controllaDatiPersona(personaAccettata);
-
-    if(risultato == true  ){ //ovvero se i dati sono giusti e l'utente ha accettato allora ritornerà true altrimenti false 
-
-      giudizioScelta = true;
-
-    }else{
-
-      giudizioScelta = false;
-
-    }
-
-  return giudizioScelta;
-  }
-
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-  public static boolean seRifiuta(Persona personaRifutata){ //il metodo controlla la persona e se l'utente ha fatto la scelta giusta ritorna true altrimenti false
-
-   boolean risultato = controllaDatiPersona(personaRifutata);
-    
-   if(risultato == false  ){ //ovvero se i dati sono sbagliati e l'utente ha rifiutati allora ritornerà true altrimenti false 
-
-    giudizioScelta = true;
-
-  }else{
-
-    giudizioScelta = false;
-
-  }
-   
-   return  giudizioScelta; 
-
-  }
-*/
+ 
   // CONTROLLO CODICE FISCALE CON CONTROLLO INCROCIATO CON I DATI DELLA PERSONA
 
   public static boolean controllaDatiPersona(Persona p, LocalDate giornoCorrente){      //metodo che controlla se il codice fiscale della persona è valido
