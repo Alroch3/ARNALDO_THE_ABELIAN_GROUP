@@ -30,13 +30,9 @@ public class Partita {
             StatusDoganiere.calcolaConto();
             System.out.println(StatusDoganiere.toString(contatoreGiorni));
             StatusDoganiere.aggiornaRisparmi();
+            Finali.dodicesimoGiorno();
             contatoreGiorni++;
-            if(statusGioco == false){
-                statusGioco = Finali.dodicesimoGiorno();
-            }
         }while(!statusGioco);
-
-        Display.messaggioFinale();
 
         //REPORT
         //QUA BISOGNA STAMPARE IL DIARIO (OPPURE ALLA FINE DI OGNI GIORNATA)

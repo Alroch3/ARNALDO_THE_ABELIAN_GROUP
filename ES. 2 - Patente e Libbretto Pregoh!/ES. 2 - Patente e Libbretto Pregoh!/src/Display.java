@@ -6,7 +6,7 @@ public class Display {
     //---------- REFACTOR ----------//
 
     private static final String TITOLO_MENU = "Menu principale";
-    private static final String TITOLO_MENU_CORRUZIONE = "PROPOSTA DA TIZIO LOSCO";
+    private static final String TITOLO_MENU_CORRUZIONE = TestoPersonalizzato.testoBluegrosso("PROPOSTA DA TIZIO LOSCO");
 
     //---------- VOCI MENU ----------//
     private static final String vociMenu [] = {
@@ -42,14 +42,13 @@ public class Display {
         InterazioniUtente.scegliDaMenu();
     }
 
-    public static void messaggioFinale(){
-        if(Finali.dodicesimoGiorno()){
-            System.out.println(TestoPersonalizzato.testoVerdeegrosso("\n\tHAI VINTO!"));
-        }else{
-            System.out.println(TestoPersonalizzato.testoRossoeGrosso("\n\tHAI PERSO!"));
-        }
+    public static void haiVinto(){
+        System.out.println(TestoPersonalizzato.testoVerdeegrosso("\n\tHAI VINTO!"));
     }
 
+    public static void haiPerso(){
+        System.out.println(TestoPersonalizzato.testoRossoeGrosso("\n\tHAI PERSO!"));
+    }
 
     public static void mostraContoResiduo() {
 

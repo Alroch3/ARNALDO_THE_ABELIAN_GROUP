@@ -6,7 +6,7 @@ public class GiornoLavorativo {
 
     private static LocalDate giornoCorrente;   
     
-    private int numPersonePassate;
+    private static int numPersonePassate;
 
     private static Persona[] personeDelGiorno = new Persona[7];   
     
@@ -52,7 +52,7 @@ public class GiornoLavorativo {
 
     
 
-    public int getNumPersonePassate() {
+    public static int getNumPersonePassate() {
         return numPersonePassate;
     }
 
