@@ -10,7 +10,7 @@ public class Persona {
     private boolean sceltaUtente;       //scelta da parte dell'utente ( non quella giusta ) SERVE PER IL DIARIO
 
     public Persona(String nome, String cognome, String sesso, String data, String luogoDiNascita, String cF,
-            String scadenza) {
+            String scadenza, boolean sceltaUtente) {
         this.nome = nome;
         this.cognome = cognome;
         this.sesso = sesso;
@@ -18,6 +18,7 @@ public class Persona {
         this.luogoDiNascita = luogoDiNascita;
         this.cF = cF;
         this.scadenza = scadenza;
+        this.sceltaUtente = sceltaUtente;
     }
 
     @Override
@@ -87,7 +88,7 @@ public class Persona {
         this.scadenza = scadenza;
     }
 
-    public boolean isSceltaUtente() {
+    public boolean getSceltaUtente() {
         return sceltaUtente;
     }
 

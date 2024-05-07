@@ -54,6 +54,7 @@ public class InterazioniUtente {
   }
 
   private static void seAccetta() {
+    
     System.out.println(MSG_ENTRATA_ACCETTATA);
     Governo.daiMultaTrecento();
     

@@ -1,5 +1,5 @@
 import java.io.FileInputStream;
-
+import java.io.FileOutputStream;
 import java.io.IOException;
 
 
@@ -39,7 +39,7 @@ public class GestioneXML {
      XMLInputFactory xmlif = null;
      XMLStreamReader xmlr = null;
 
-     Persona p = new Persona("", "", "", "", "", "", "");
+     Persona p = new Persona("", "", "", "", "", "", "", false);
      boolean elementoTrovato = false;                             //booleano che ci dice se la persona selezionata dall'indice è stata trovata nell'XML
 
      try (FileInputStream reader = new FileInputStream(filename)) {
@@ -173,5 +173,104 @@ public class GestioneXML {
         }
         return risultato;
     }
+
+    public void scriviDiario(GiornoLavorativo giorno,int numGiorno) {
+    String filename = "ES. 2 - Patente e Libbretto Pregoh!\\ES. 2 - Patente e Libbretto Pregoh!\\src\\XML\\Diario.xml";
+    XMLOutputFactory xmlof = null;
+    XMLStreamWriter xmlw = null;
+    String[] teachers = { "Marco", "Matteo", "Stefano", "Kibo" };
+
+    try (FileOutputStream writer = new FileOutputStream(filename)) {
+      xmlof = XMLOutputFactory.newInstance();
+      xmlw = xmlof.createXMLStreamWriter(writer, "UTF-8");
+
+      try {
+        xmlw.writeStartDocument("UTF-8", "1.0");
+        xmlw.writeCharacters("\n");
+        xmlw.writeStartElement("diario");
+        xmlw.writeCharacters("\n\t");
+
+        xmlw.writeStartElement("giornata");
+        xmlw.writeAttribute("numero", String.valueOf(numGiorno));
+
+        xmlw.writeStartElement("data");
+        xmlw.writeCharacters(giorno.getGiornoCorrente().toString());
+        xmlw.writeEndElement();
+
+        xmlw.writeStartElement("bilancio");
+        xmlw.writeCharacters(String.valueOf(StatusDoganiere.getConto()));
+        xmlw.writeEndElement();
+
+        xmlw.writeStartElement("persone");
+        xmlw.writeAttribute("numero", String.valueOf(giorno.getNumPersonePassate()));
+        for (int i = 1; i <= giorno.getNumPersonePassate(); i++) {
+            xmlw.writeStartElement("persona");
+            xmlw.writeAttribute("id", String.valueOf(i));
+
+            xmlw.writeStartElement("nome");
+            xmlw.writeCharacters(String.valueOf(giorno.getUnaPersonaDallArray(i-1).getNome()));
+            xmlw.writeEndElement();
+
+            xmlw.writeStartElement("cognome");
+            xmlw.writeCharacters(String.valueOf(giorno.getUnaPersonaDallArray(i-1).getCognome()));
+            xmlw.writeEndElement();
+            
+            xmlw.writeStartElement("sesso");
+            xmlw.writeCharacters(String.valueOf(giorno.getUnaPersonaDallArray(i-1).getSesso()));
+            xmlw.writeEndElement();
+
+            xmlw.writeStartElement("data_nascita");
+            xmlw.writeCharacters(String.valueOf(giorno.getUnaPersonaDallArray(i-1).getData()));
+            xmlw.writeEndElement();
+
+            xmlw.writeStartElement("comune_nascita");
+            xmlw.writeCharacters(String.valueOf(giorno.getUnaPersonaDallArray(i-1).getLuogoDiNascita()));
+            xmlw.writeEndElement();
+
+            xmlw.writeStartElement("codice_fiscale");
+            xmlw.writeCharacters(String.valueOf(giorno.getUnaPersonaDallArray(i-1).getcF()));
+            xmlw.writeEndElement();
+
+            xmlw.writeStartElement("data_scadenza_id");
+            xmlw.writeCharacters(String.valueOf(giorno.getUnaPersonaDallArray(i-1).getScadenza()));
+            xmlw.writeEndElement();
+
+            xmlw.writeStartElement("data_nascita");
+            xmlw.writeCharacters(String.valueOf(giorno.getUnaPersonaDallArray(i-1).getData()));
+            xmlw.writeEndElement();
+
+
+            xmlw.writeCharacters("\t");
+            xmlw.writeStartElement("insegnante");
+            xmlw.writeAttribute("id", Integer.toString(i));
+            xmlw.writeCharacters(teachers[i]);
+            xmlw.writeEndElement();
+            xmlw.writeCharacters("\n");
+          }
+
+        xmlw.writeCharacters("\n");
+
+        for (int i = 0; i < teachers.length; i++) {
+          xmlw.writeCharacters("\t");
+          xmlw.writeStartElement("insegnante");
+          xmlw.writeAttribute("id", Integer.toString(i));
+          xmlw.writeCharacters(teachers[i]);
+          xmlw.writeEndElement();
+          xmlw.writeCharacters("\n");
+        }
+
+        xmlw.writeEndElement();
+        xmlw.writeEndDocument();
+
+        xmlw.flush();
+        xmlw.close();
+      } catch (XMLStreamException e) {
+        System.out.println("Error while writing!");
+      }
+    } catch (XMLStreamException | IOException e) {
+      System.out.println("Error in initializing the writer:");
+      System.out.println(e.getMessage());
+    }
+  }
 
 }
