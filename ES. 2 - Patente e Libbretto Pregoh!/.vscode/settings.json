@@ -1,0 +1,7 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "ES. 2 - Patente e Libbretto Pregoh!/lib/jansi-2.4.0.jar",
+        "ES. 2 - Patente e Libbretto Pregoh!/lib/kibofplib-1.0.jar"
+    ]
+}
